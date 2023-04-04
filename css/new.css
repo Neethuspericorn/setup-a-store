@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.new-arrival {
+  padding: 130px 0px;
+}
+.new-arrival .half-area {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.new-arrival .half-area .produt-view {
+  width: 100%;
+  background-color: #F8F8F8;
+  overflow: hidden;
+  padding: 30px 0px 30px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.new-arrival .half-area .produt-view .produt-img {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  right: -30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.new-arrival .half-area .produt-view .produt-img img {
+  max-width: 300px;
+}
+.new-arrival .half-area .produt-view .product-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.new-arrival .half-area .produt-view .product-info .product-head {
+  width: 100%;
+  font-size: 40px;
+  line-height: 1.5;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+  margin-bottom: 0px;
+}
+.new-arrival .half-area .produt-view .product-info .product-cnt {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #949393;
+  margin-bottom: 15px;
+}
+.new-arrival .half-area .produt-view .product-info .btn-shop {
+  background: #293341;
+  border: 1px solid #293341;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  border-radius: 0px;
+  padding: 10px 50px 10px 20px;
+  position: relative;
+  text-decoration: none;
+}
+.new-arrival .half-area .produt-view .product-info .btn-shop::after {
+  content: "";
+  width: 20px;
+  height: 10px;
+  background-image: url(../img/round-forward-white.svg);
+  position: absolute;
+  right: 13px;
+  top: 17px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.new-arrival .half-area .small-product {
+  background-color: transparent;
+  padding: 0px !important;
+  margin-bottom: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.new-arrival .half-area .small-product:last-child {
+  margin-bottom: 0px;
+}
+.new-arrival .half-area .small-product .product-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.new-arrival .half-area .small-product .product-main .produt-img {
+  right: unset;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background-color: #F8F8F8;
+  padding: 50px 0px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.new-arrival .half-area .small-product .product-main .produt-img .info-badge {
+  background: #FF4E00;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  width: 70px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.new-arrival .half-area .small-product .product-main .produt-img img {
+  max-height: 150px;
+}
+.new-arrival .half-area .small-product .product-main .product-info {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.new-arrival .half-area .small-product .product-main .product-info .hed {
+  color: #222222;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0px;
+}
+.new-arrival .half-area .small-product .product-main .product-info .price {
+  color: #949393;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0px;
+  letter-spacing: -0.52px;
+}
+.new-arrival .half-area .small-product .product-main .product-info .price .cross {
+  text-decoration: line-through;
+}
+.new-arrival .half-area .small-product .product-main .product-info .price .nor {
+  color: #FF0000;
+}
+
+@media (max-width: 1679px) {
+  .new-arrival {
+    padding: 110px 0px;
+  }
+  .new-arrival .half-area .produt-view .product-info .product-head {
+    font-size: 38px;
+  }
+  .new-arrival .half-area .produt-view .product-info .product-cnt {
+    font-size: 15px;
+  }
+  .new-arrival .half-area .produt-view .product-info .btn-shop {
+    font-size: 15px;
+  }
+  .new-arrival .half-area .produt-view .product-info .btn-shop::after {
+    top: 14px;
+  }
+  .new-arrival .half-area .produt-view .produt-img img {
+    max-width: 280px;
+  }
+}
+@media (max-width: 1440px) {
+  .new-arrival {
+    padding: 100px 0px;
+  }
+  .new-arrival .half-area .produt-view {
+    padding: 25px;
+  }
+  .new-arrival .half-area .produt-view .product-info .product-head {
+    font-size: 35px;
+  }
+  .new-arrival .half-area .produt-view .product-info .product-cnt {
+    font-size: 14px;
+  }
+  .new-arrival .half-area .produt-view .product-info .btn-shop {
+    font-size: 14px;
+  }
+  .new-arrival .half-area .produt-view .produt-img img {
+    max-width: 250px;
+  }
+}
+@media (max-width: 1280px) {
+  .new-arrival {
+    padding: 80px 0px;
+  }
+  .new-arrival .half-area .produt-view .product-info .product-head {
+    font-size: 30px;
+  }
+  .new-arrival .half-area .produt-view .product-info .product-cnt {
+    font-size: 13px;
+  }
+  .new-arrival .half-area .produt-view .product-info .btn-shop {
+    font-size: 13px;
+  }
+  .new-arrival .half-area .produt-view .produt-img img {
+    max-width: 230px;
+  }
+}
+@media (max-width: 991px) {
+  .new-arrival {
+    padding: 70px 0px;
+  }
+  .new-arrival .half-area .produt-view .produt-img img {
+    max-width: 200px;
+  }
+  .new-arrival .half-area .small-product .product-main .produt-img img {
+    max-height: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .new-arrival {
+    padding: 60px 0px;
+  }
+  .new-arrival .half-area .produt-view {
+    margin-bottom: 30px;
+  }
+  .new-arrival .half-area .produt-view .produt-img img {
+    max-width: 150px;
+  }
+  .new-arrival .half-area .small-product .product-main .produt-img img {
+    max-height: 150px;
+  }
+}
+@media (max-width: 575px) {
+  .new-arrival {
+    padding: 50px 0px;
+  }
+  .new-arrival .half-area .produt-view .produt-img img {
+    max-width: 130px;
+  }
+}

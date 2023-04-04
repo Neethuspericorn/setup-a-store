@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.top-area {
+  padding: 15px 0px;
+  background-color: #293341;
+}
+.top-area .top-bar-cnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.top-area .top-bar-cnt .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.top-area .top-bar-cnt .contact .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.top-area .top-bar-cnt .contact .item .icon {
+  margin-right: 10px;
+}
+.top-area .top-bar-cnt .contact .item .icon img {
+  width: 12px;
+  height: 11px;
+}
+.top-area .top-bar-cnt .contact .item .text {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  margin-right: 15px;
+}
+.top-area .top-bar-cnt .offer .text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+.top-area .top-bar-cnt .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.top-area .top-bar-cnt .info .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.top-area .top-bar-cnt .info .item .icon {
+  margin-right: 10px;
+}
+.top-area .top-bar-cnt .info .item .icon img {
+  width: 12px;
+  height: 11px;
+}
+.top-area .top-bar-cnt .info .item .text {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  margin-right: 15px;
+}
+.top-area .top-bar-cnt .info .item .dropdown .dropdown-toggle {
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  padding-right: 20px;
+  position: relative;
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.top-area .top-bar-cnt .info .item .dropdown .dropdown-toggle::after {
+  border: none;
+  background-image: url(../img/arrow-down.svg);
+  width: 10px;
+  height: 6px;
+  background-repeat: no-repeat;
+  top: 9px;
+  right: 0px;
+  position: absolute;
+}
+.top-area .top-bar-cnt .info .item .dropdown .dropdown-toggle .flg {
+  margin-right: 5px;
+}
+.top-area .top-bar-cnt .info .item .dropdown .dropdown-menu {
+  padding: 0px;
+}
+.top-area .top-bar-cnt .info .item .dropdown .dropdown-menu .dropdown-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.top-area .top-bar-cnt .info .item .dropdown .dropdown-menu .dropdown-item .flg {
+  margin-right: 10px;
+}
+.top-area .top-bar-cnt .info .item:last-child .dropdown .dropdown-toggle {
+  margin-right: 0px;
+}
+
+.navbar {
+  padding: 18px 0px;
+}
+.navbar .navbar-brand .logo-text {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 57px;
+  letter-spacing: -1.28px;
+  color: #222222;
+  margin-bottom: 0px;
+}
+.navbar .notification li {
+  margin-right: 20px;
+}
+.navbar .notification li:last-child {
+  margin-right: 0px;
+}
+.navbar .notification li .icn-set {
+  position: relative;
+}
+.navbar .notification li .icn-set .badge {
+  background-color: #293341;
+  position: absolute;
+  top: -11px;
+  left: 11px;
+  border-radius: 50%;
+}
+.navbar .navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+.navbar .navbar-nav .nav-item {
+  margin-right: 60px;
+}
+.navbar .navbar-nav .nav-item:last-child {
+  margin-right: 0px;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #222222;
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.navbar .navbar-nav .nav-item.active .nav-link {
+  font-weight: bold;
+}
+
+@media (max-width: 1280px) {
+  .top-area {
+    padding: 10px 0px;
+  }
+  .top-area .top-bar-cnt .contact {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .top-area .top-bar-cnt .offer {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 100%;
+  }
+  .top-area .top-bar-cnt .offer .text {
+    text-align: center;
+  }
+  .top-area .top-bar-cnt .info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .navbar .navbar-nav .nav-item {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .navbar .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-right: 15px;
+  }
+  .navbar .navbar-nav .nav-item {
+    margin-right: 10px;
+  }
+  .navbar .navbar-toggler {
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+@media (max-width: 767px) {
+  .top-area .top-bar-cnt .offer .text {
+    text-align: left;
+  }
+}
+@media (max-width: 575px) {
+  .sub-banner {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .navbar .navbar-brand {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .navbar .notification {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 0px;
+  }
+  .navbar .navbar-toggler {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .navbar .notification {
+    padding-right: 25px;
+  }
+}

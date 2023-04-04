@@ -1,0 +1,248 @@
+@import "partials/partials";
+ 
+.top-area{
+    padding: 15px 0px;
+    background-color: #293341;
+    .top-bar-cnt{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .contact{
+            display: flex;
+            flex-wrap: wrap;
+            .item{
+                display: flex;
+                align-items: center;
+                .icon{
+                    margin-right: 10px;
+                    img{
+                        width: 12px;
+                        height: 11px;
+                    }
+                }
+                .text{
+                    font-size: 12px;
+                    line-height: 24px;
+                    font-weight: 300;
+                    font-family: $font-primary;
+                    color: #fff;
+                    margin-right: 15px;
+                }
+            }
+        }
+        .offer{
+            .text{
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: 300;
+                font-family: $font-primary;
+                color: #fff;
+            }
+        }
+        .info {
+            display: flex;
+            .item{
+                display: flex;
+                align-items: center;
+                .icon{
+                    margin-right: 10px;
+                    img{
+                        width: 12px;
+                        height: 11px;
+                    }
+                }
+                .text{
+                    font-size: 12px;
+                    line-height: 24px;
+                    font-weight: 300;
+                    font-family: $font-primary;
+                    color: #fff;
+                    margin-right: 15px;
+                }
+                .dropdown{
+                    .dropdown-toggle{
+                        padding: 0px;
+                        border: none;
+                        background-color: transparent;
+                        font-size: 12px;
+                        line-height: 24px;
+                        font-weight: 300;
+                        font-family: $font-primary;
+                        color: #fff;
+                        padding-right: 20px;
+                        position: relative;
+                        margin-right: 15px;
+                        display: flex;
+                        &::after{
+                            border: none;
+                            background-image: url(../img/arrow-down.svg);
+                            width: 10px;
+                            height: 6px;
+                            background-repeat: no-repeat;
+                            top: 9px;
+                            right: 0px;
+                            position: absolute;
+                        }
+                        .flg{
+                            margin-right: 5px;
+                        }
+                    }
+                    .dropdown-menu{
+                        padding: 0px;
+                        .dropdown-item{
+                            display: flex;
+                            .flg{
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+                &:last-child{
+                    .dropdown{
+                        .dropdown-toggle{
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// top bar End
+.navbar{
+    padding: 18px 0px;
+    .navbar-brand{
+        .logo-text{
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 57px;
+            letter-spacing: -1.28px;
+            color: #222222;
+            margin-bottom: 0px;
+        }
+    }
+    .notification{
+        li{
+            margin-right: 20px;
+            &:last-child{
+                margin-right: 0px;
+            }
+            .icn-set{
+                position: relative;
+                .badge {
+                    background-color: #293341;
+                    position: absolute;
+                    top: -11px;
+                    left: 11px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    .navbar-nav{
+        margin-left: auto;
+        margin-right: auto;
+        .nav-item{
+            margin-right: 60px;
+            &:last-child{
+                margin-right: 0px;
+            }
+            .nav-link{
+                color: #222222;
+                font-size: 14px;
+                line-height: 1.2;
+                font-family: $font-primary;
+                text-transform: capitalize;
+                font-weight: 500;
+            }
+            &.active{
+                .nav-link{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1679px){}
+@media(max-width:1440px){}
+@media(max-width:1280px){
+    .top-area {
+        padding: 10px 0px;
+        .top-bar-cnt{
+            .contact{
+                order: 1;
+            }
+            .offer{
+                order: 3;
+                width: 100%;
+                .text{
+                    text-align: center;
+                }
+            }
+            .info{
+                order: 2    ;
+            }
+        }
+    }
+    // top bar End
+    .navbar {
+        .navbar-nav {
+            .nav-item{
+                margin-right: 50px;
+            }
+        }
+    }
+}
+@media(max-width:991px){
+    .navbar {
+        .navbar-nav {
+            flex-direction: row;
+            margin-right: 15px;
+
+            .nav-item{
+                margin-right: 10px;
+            }
+        }
+        .navbar-toggler {
+            border: none;
+            box-shadow: none;
+        }
+    }
+}
+@media(max-width:767px){
+    .top-area {
+        .top-bar-cnt{
+            .offer{
+                .text{
+                    text-align: left;
+                }
+            }
+        }
+    }
+    // top bar End
+}
+@media(max-width:575px){
+    .sub-banner{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .navbar {
+        .navbar-brand{
+            order: 1;
+        }
+        .notification{
+            order: 3;
+            width: 100%;
+            justify-content: flex-end;
+            margin-right: 0px;
+        }
+        .navbar-toggler{
+            order: 2;
+        }
+    }
+    .navbar .notification{
+        padding-right: 25px;
+    }
+}
+
