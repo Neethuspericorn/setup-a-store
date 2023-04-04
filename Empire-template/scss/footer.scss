@@ -1,0 +1,210 @@
+@import 'variable.scss';
+.design-my-store{
+    footer {
+        .footer-outer
+        {
+            padding: 67px 0 40px;
+            background: #1AB0CE;
+            margin-top: 70px;
+            @media(max-width:991px)
+            {
+                padding: 24px 0 24px;
+            }
+        .navbar-brand {
+        img {
+            height: 65px;
+            @media(max-width:1679px)
+            {
+                height: 50px;
+            }
+            @media(max-width:767px)
+            {
+                height: 46px;
+            }
+        }
+        }
+        .ftr-content {
+        padding: 15px 0 0;
+        font-family: $dmSans; 
+        letter-spacing: -0.2px;
+        color: #ffffff;
+        font-size: 22px;
+        margin-bottom:30px;
+        @media(max-width:1679px)
+        {
+            font-size: 19px;
+            line-height: 27px;
+        }
+        @media(max-width:767px)
+        {
+            font-size: 17px;
+            line-height: 24px;
+        }
+        @media(max-width:500px)
+        {
+            font-size: 15px;
+            line-height: 20px;
+        }
+        }
+        .footer-title {    
+        letter-spacing: -0.35px;
+        color: #ffffff;
+        font-family: $dmSans; 
+        font-size:30px;
+        font-weight:normal;
+        margin-bottom: 22px;
+        @media(max-width:1679px)
+        {
+            font-size: 23px;
+        }
+        @media(max-width:500px)
+        {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+        }
+        .footer-link{
+        text-decoration: none;
+        cursor: pointer;
+        
+        }
+        .footer-links {
+            padding-left: 0px;
+        @media (max-width: 991px) {
+            margin-bottom: 20px;
+        }
+        li {
+            list-style: none;
+            margin-bottom:22px;
+            @media (max-width:1679px) 
+            {
+                margin-bottom: 15px;
+            }
+        }
+        p,
+        a {
+            font-family: $dmSans; 
+            font-size:22px;
+            margin-bottom: 22px;
+            font-weight:300;
+            letter-spacing: -0.17px;
+            color: #fff !important;
+            @media (max-width:1679px) 
+            {
+                font-size: 19px;
+            }
+            @media(max-width:767px)
+            {
+                font-size: 17px;
+                line-height: 24px;
+            }
+           
+            @media(max-width:500px)
+            {
+                font-size: 15px;
+                line-height: 20px;
+            }
+        }
+        }
+        .footer-link {
+        font: normal normal normal 14px/26px $roboto;
+        letter-spacing: -0.17px;
+        color: #302f2f;
+        }
+        .social-icons-outer
+        {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            li
+            {
+                margin-right: 10px;
+                background: #0C9CB9;
+                min-width: 41px;
+                text-align: center;
+                min-height: 41px;
+                line-height: 37px;
+                border-radius: 6px;
+                @media(max-width:1679px)
+                {
+                    min-width: 38px;
+                    text-align: center;
+                    min-height: 36px;
+                    line-height: 32px;
+                }
+                img
+                {
+                    height: 20px;
+                    @media(max-width:1679px)
+                    {
+                        height: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+.copy-right-cover
+{
+    background: #0C9CB9;
+    .copy-right-section
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0px;
+        align-items: center;
+        @media(max-width:600px)
+        {
+            flex-direction: column;
+        }
+        .copy-rght-text
+        {
+            color: #fff;
+            font-family: $dmSans; 
+            font-size:20px;
+            font-weight:200;
+            @media(max-width:1679px)
+            {
+                font-size:17px;
+            }
+            @media(max-width:600px)
+            {
+                margin-bottom: 11px;
+            }
+            @media(max-width:500px)
+            {
+                font-size: 15px;
+            }
+        }
+        .pay-img-section
+        {
+            list-style:none;
+            display: flex;
+            margin-bottom: 0;
+            li
+            {
+                margin-right:5px;
+                img
+                {
+                    height:35px;
+                    @media(max-width:1679px)
+                    {
+                        height: 30px;
+                    }
+                    @media(max-width:500px)
+                    {
+                        height: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+@media(max-width:1679px)
+{
+    .links-section,.contact-info
+    {
+        margin-top:20px;
+    }
+}

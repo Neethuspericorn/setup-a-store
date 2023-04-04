@@ -1,0 +1,82 @@
+@import 'variable.scss';
+.design-my-store{
+    header{
+        .btm-radius{
+            border-radius: 0px 0px 46px 46px;
+        }
+        .bg-light {
+            background-color: #fff!important;
+        }
+        .navbar-brand{
+            @media (min-width:992px){
+            margin-right: 190px;
+            }
+        }
+        .navbar-nav{ 
+            .nav-item{
+                margin: 0 5px;
+            }
+            .nav-link{
+                font: normal normal normal 14px/32px $dmSans;
+                color: #9CA0A8;
+                opacity: 0.92;
+                padding: 5px 15px !important;
+                position: relative;
+                &:hover{
+                    color: $primaryColor !important;
+                }
+            }
+            .active {
+                .nav-link{
+                    color: $primaryColor !important;
+                }
+            }
+        }
+        .notification{
+            @media (max-width:767px){
+                flex-direction: row;
+            }
+            li{
+                margin: 0 5px;
+                position: relative;
+                img{
+                    max-height: 19px;
+                }
+                span{
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    color: #fff;
+                    background-color: $primaryColor;
+                    right: 0px;
+                }
+            }
+        }
+        .custom-sel-wrp{
+            background-color: #F8F8F8;
+            border: 1px solid #EFEFEF;
+            border-radius: 5px;
+            padding: 0 15px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            &:before{
+                content: "";
+                display: inline-block;
+                background: url(../images/triple-line.svg) no-repeat center;
+                width: 18px;
+                height: 12px;
+            }
+            .custom-select{
+                border: none;
+                background-color: transparent;
+                &.header{
+                    max-width: 198px;
+                    width: 100%;
+                    background-image: url(../images/droparrow-down.svg);
+                }
+            }
+        }
+    }
+}
