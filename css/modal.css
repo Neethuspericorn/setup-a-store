@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.authentication-modal .modal-dialog {
+  max-width: 574px; }
+  .authentication-modal .modal-dialog .modal-header {
+    padding: 55px 45px 0;
+    border: none;
+    position: relative; }
+    @media (max-width: 1679px) {
+      .authentication-modal .modal-dialog .modal-header {
+        padding: 45px 40px 0; } }
+    @media (max-width: 1367px) {
+      .authentication-modal .modal-dialog .modal-header {
+        padding: 30px 40px 0; } }
+    @media (max-width: 1281px) {
+      .authentication-modal .modal-dialog .modal-header {
+        padding: 30px 30px 0; } }
+    .authentication-modal .modal-dialog .modal-header .btn-close {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background: url("../img/modal-close.svg") no-repeat center;
+      width: 21px;
+      height: 21px;
+      padding: 0; }
+    .authentication-modal .modal-dialog .modal-header .modal-title {
+      text-align: left;
+      font: 600 26px "Poppins", sans-serif;
+      letter-spacing: -1.04px;
+      color: #222222;
+      display: flex;
+      align-items: center; }
+      @media (max-width: 1281px) {
+        .authentication-modal .modal-dialog .modal-header .modal-title {
+          font-size: 22px; } }
+      .authentication-modal .modal-dialog .modal-header .modal-title .modal-logo {
+        width: 29px;
+        height: 29px;
+        object-fit: cover;
+        margin-right: 12px; }
+        @media (max-width: 1281px) {
+          .authentication-modal .modal-dialog .modal-header .modal-title .modal-logo {
+            width: 24px;
+            height: 24px; } }
+  .authentication-modal .modal-dialog .modal-body {
+    padding: 45px 45px 55px; }
+    @media (max-width: 1679px) {
+      .authentication-modal .modal-dialog .modal-body {
+        padding: 30px 35px 35px; } }
+    @media (max-width: 1281px) {
+      .authentication-modal .modal-dialog .modal-body {
+        padding: 30px; } }
+    .authentication-modal .modal-dialog .modal-body .title-txt {
+      margin-bottom: 32px; }
+      @media (max-width: 1679px) {
+        .authentication-modal .modal-dialog .modal-body .title-txt {
+          margin-bottom: 25px; } }
+      @media (max-width: 1023px) {
+        .authentication-modal .modal-dialog .modal-body .title-txt {
+          margin-bottom: 20px; } }
+      .authentication-modal .modal-dialog .modal-body .title-txt h4 {
+        text-align: left;
+        font: normal normal 600 20px/30px "Poppins", sans-serif;
+        letter-spacing: 0px;
+        color: #222222;
+        margin: 0; }
+        .authentication-modal .modal-dialog .modal-body .title-txt h4 span {
+          text-align: left;
+          font: normal 20px "Poppins", sans-serif;
+          color: #A4AEB8; }
+    .authentication-modal .modal-dialog .modal-body .form-block {
+      margin-bottom: 40px; }
+      @media (max-width: 1367px) {
+        .authentication-modal .modal-dialog .modal-body .form-block {
+          margin-bottom: 30px; } }
+      .authentication-modal .modal-dialog .modal-body .form-block .input-group .input-group-text {
+        background: #f8f8f8;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer; }
+      .authentication-modal .modal-dialog .modal-body .form-block .form-label {
+        text-align: left;
+        font: normal 14px "Poppins", sans-serif;
+        color: #293341;
+        margin-bottom: 5px; }
+      .authentication-modal .modal-dialog .modal-body .form-block .form-control {
+        height: 60px;
+        background: #F8F8F8;
+        border-radius: 6px;
+        border: none; }
+        .authentication-modal .modal-dialog .modal-body .form-block .form-control::placeholder {
+          color: #293341;
+          opacity: 1; }
+        @media (max-width: 1679px) {
+          .authentication-modal .modal-dialog .modal-body .form-block .form-control {
+            height: 50px; } }
+        @media (max-width: 1281px) {
+          .authentication-modal .modal-dialog .modal-body .form-block .form-control {
+            height: 46px; } }
+    .authentication-modal .modal-dialog .modal-body .btn-primary {
+      background: #FF4E00;
+      box-shadow: 0px 2px 8px #00000014;
+      border-radius: 6px;
+      height: 59px;
+      text-align: center;
+      font: 500 16px "Poppins", sans-serif;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      display: block;
+      margin: auto;
+      width: 100%;
+      border: none !important;
+      margin-bottom: 20px; }
+      @media (max-width: 1679px) {
+        .authentication-modal .modal-dialog .modal-body .btn-primary {
+          height: 50px; } }
+      @media (max-width: 1281px) {
+        .authentication-modal .modal-dialog .modal-body .btn-primary {
+          height: 44px;
+          font-size: 14px; } }
+    .authentication-modal .modal-dialog .modal-body .remember-txt {
+      display: flex;
+      align-items: center; }
+      .authentication-modal .modal-dialog .modal-body .remember-txt .form-check {
+        padding-left: 20px; }
+        .authentication-modal .modal-dialog .modal-body .remember-txt .form-check .form-check-input {
+          background: #FFFFFF;
+          border: 1px solid #C1C1C1;
+          border-radius: 4px;
+          margin-right: 15px; }
+        .authentication-modal .modal-dialog .modal-body .remember-txt .form-check .form-check-label {
+          text-align: left;
+          font: normal 16px "Poppins", sans-serif;
+          letter-spacing: 0px;
+          color: #000000; }
+          @media (max-width: 1367px) {
+            .authentication-modal .modal-dialog .modal-body .remember-txt .form-check .form-check-label {
+              font-size: 14px; } }
+      .authentication-modal .modal-dialog .modal-body .remember-txt .forgot-txt {
+        margin: auto;
+        margin-right: 0;
+        text-align: right;
+        font: normal 16px "Poppins", sans-serif;
+        color: #FF4E00; }
+        @media (max-width: 1367px) {
+          .authentication-modal .modal-dialog .modal-body .remember-txt .forgot-txt {
+            font-size: 14px; } }
+    .authentication-modal .modal-dialog .modal-body .privacy-txt {
+      padding-top: 15px;
+      margin-top: 20px;
+      border-top: 1px solid #CFD6DE;
+      text-align: center;
+      font: normal 13px/20px "Poppins", sans-serif;
+      letter-spacing: 0px;
+      color: #A9B1BC;
+      margin-bottom: 0; }
+      .authentication-modal .modal-dialog .modal-body .privacy-txt span {
+        color: #FF4E00;
+        font-weight: 500; }
+        @media (max-width: 767px) {
+          .authentication-modal .modal-dialog .modal-body .privacy-txt span {
+            display: block; } }
+
+.login-modal .modal-body {
+  padding-bottom: 25px !important; }
+
+/*# sourceMappingURL=modal.css.map */

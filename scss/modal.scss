@@ -1,0 +1,229 @@
+@import "partials/partials";
+
+.authentication-modal {
+    .modal-dialog {
+        max-width: 574px;
+
+        .modal-header {
+            padding: 55px 45px 0;
+            border: none;
+            position: relative;
+
+            @media ($sm-1679) {
+                padding: 45px 40px 0;
+            }
+            @media ($sm-1367) {
+                padding: 30px 40px 0;
+            }
+
+            @media ($sm-1281) {
+                padding: 30px 30px 0;
+            }
+
+            .btn-close {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                background: url('../img/modal-close.svg') no-repeat center;
+                width: 21px;
+                height: 21px;
+                padding: 0;
+            }
+
+            .modal-title {
+                text-align: left;
+                font: 600 26px $font-primary;
+                letter-spacing: -1.04px;
+                color: #222222;
+                display: flex;
+                align-items: center;
+
+                @media ($sm-1281) {
+                    font-size: 22px;
+                }
+
+                .modal-logo {
+                    width: 29px;
+                    height: 29px;
+                    object-fit: cover;
+                    margin-right: 12px;
+
+                    @media ($sm-1281) {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+
+        .modal-body {
+            padding: 45px 45px 55px;
+
+            @media ($sm-1679) {
+                padding: 30px 35px 35px;
+            }
+
+            @media ($sm-1281) {
+                padding: 30px;
+            }
+
+            .title-txt {
+                margin-bottom: 32px;
+
+                @media ($sm-1679) {
+                    margin-bottom: 25px;
+                }
+
+                @media ($sm-1023) {
+                    margin-bottom: 20px;
+                }
+
+                h4 {
+                    text-align: left;
+                    font: normal normal 600 20px/30px $font-primary;
+                    letter-spacing: 0px;
+                    color: #222222;
+                    margin: 0;
+
+                    span {
+                        text-align: left;
+                        font: normal 20px $font-primary;
+                        color: #A4AEB8;
+                    }
+                }
+            }
+
+            .form-block {
+                margin-bottom: 40px;
+
+                @media ($sm-1367) {
+                    margin-bottom: 30px;
+                }
+
+                .input-group {
+                    .input-group-text {
+                        background: #f8f8f8;
+                        border: none;
+                        border-radius: 6px;
+                        cursor: pointer;
+                    }
+                }
+
+                .form-label {
+                    text-align: left;
+                    font: normal 14px $font-primary;
+                    color: #293341;
+                    margin-bottom: 5px;
+                }
+
+                .form-control {
+                    height: 60px;
+                    background: #F8F8F8;
+                    border-radius: 6px;
+                    border: none;
+
+                    &::placeholder {
+                        color: #293341;
+                        opacity: 1;
+                    }
+
+                    @media ($sm-1679) {
+                        height: 50px;
+                    }
+
+                    @media ($sm-1281) {
+                        height: 46px;
+                    }
+                }
+
+
+            }
+
+            .btn-primary {
+                background: #FF4E00;
+                box-shadow: 0px 2px 8px #00000014;
+                border-radius: 6px;
+                height: 59px;
+                text-align: center;
+                font: 500 16px $font-primary;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+                display: block;
+                margin: auto;
+                width: 100%;
+                border: none !important;
+                margin-bottom: 20px;
+
+                @media ($sm-1679) {
+                    height: 50px;
+                }
+
+                @media ($sm-1281) {
+                    height: 44px;
+                    font-size: 14px;
+                }
+            }
+
+            .remember-txt {
+                display: flex;
+                align-items: center;
+
+                .form-check {
+                    padding-left: 20px;
+
+                    .form-check-input {
+                        background: #FFFFFF;
+                        border: 1px solid #C1C1C1;
+                        border-radius: 4px;
+                        
+                        margin-right: 15px;
+                    }
+                    .form-check-label{
+                        text-align: left;
+                        font: normal 16px $font-primary;
+                        letter-spacing: 0px;
+                        color: #000000;
+                        @media ($sm-1367) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .forgot-txt {
+                    margin: auto;
+                    margin-right: 0;
+                    text-align: right;
+                    font: normal 16px $font-primary;
+                    color: #FF4E00;
+                    @media ($sm-1367) {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .privacy-txt {
+                padding-top:15px;
+                margin-top: 20px;
+                border-top: 1px solid #CFD6DE;
+                text-align: center;
+                font: normal 13px/20px $font-primary;
+                letter-spacing: 0px;
+                color: #A9B1BC;
+                margin-bottom: 0;
+                span{
+                    color: #FF4E00;
+                    font-weight: 500;
+                    @media ($sm-767) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.login-modal{
+    .modal-body{
+        padding-bottom: 25px !important;
+    }
+}
