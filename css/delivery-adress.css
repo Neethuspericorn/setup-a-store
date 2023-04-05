@@ -26,9 +26,12 @@ body {
 .delivery-adrs-section .title-block.title-sec {
   margin-bottom: 30px;
   text-align: left;
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   margin-top: 15px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 1679px) {
   .delivery-adrs-section .title-block.title-sec {
@@ -48,8 +51,12 @@ body {
 }
 .delivery-adrs-section .title-block.title-sec .title {
   font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .delivery-adrs-section .title-block.title-sec .title img {
   height: 20px;
@@ -76,11 +83,17 @@ body {
   background: #fff;
   border: 1px solid #DAE1E8;
   height: 41px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 5px;
   align-items: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .delivery-adrs-section .title-block.title-sec .btn-right button.add-btn-plus span {
   width: 15px;
@@ -124,15 +137,22 @@ body {
 .delivery-adrs-section .delivery-box-outer .outer-dl-sec {
   border: 1px solid #E4E9EE;
   padding: 25px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 @media (max-width: 991px) {
   .delivery-adrs-section .delivery-box-outer .outer-dl-sec {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .delivery-adrs-section .delivery-box-outer .outer-dl-sec .left-side-panel {
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 .delivery-adrs-section .delivery-box-outer .outer-dl-sec .list-sec-otr .list-adr {
   border: 1px solid #E4E9EE;
@@ -142,8 +162,12 @@ body {
 .delivery-adrs-section .delivery-box-outer .outer-dl-sec .list-sec-otr .list-adr h3 {
   font-size: 21px;
   font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .delivery-adrs-section .delivery-box-outer .outer-dl-sec .list-sec-otr .list-adr .place-txt {
   color: #66829F;
@@ -231,8 +255,12 @@ body {
   }
 }
 .delivery-adrs-section .delivery-box-outer .outer-dl-sec .right-side-panel .delivery-status .delivery-status-dtl {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 15px;
 }
 .delivery-adrs-section .delivery-box-outer .outer-dl-sec .right-side-panel .delivery-status .delivery-status-dtl .img-sec {
@@ -242,9 +270,15 @@ body {
   background: #e8e8e8;
   border-radius: 5px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 1679px) {
   .delivery-adrs-section .delivery-box-outer .outer-dl-sec .right-side-panel .delivery-status .delivery-status-dtl .img-sec {
@@ -427,7 +461,6 @@ body {
   border: solid white;
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
@@ -491,9 +524,15 @@ body {
   min-height: 48px;
   margin-left: auto;
   margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (max-width: 1679px) {
   .btn-place-order {
@@ -537,8 +576,12 @@ body {
 }
 
 .safe-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #66829F;
   font-size: 14px;
   padding-left: 28px;
@@ -549,7 +592,8 @@ body {
 }
 .safe-info img {
   width: 24px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-right: 16px;
 }
 
@@ -563,9 +607,15 @@ body {
   }
 }
 .progressbars ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 14px;
 }
 @media screen and (max-width: 1200px) {
@@ -575,8 +625,12 @@ body {
 }
 .progressbars ul .cartPg {
   color: #A4AEB8;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .progressbars ul .cartPg .ico {
   margin-right: 10px;
@@ -598,8 +652,12 @@ body {
 .progressbars ul .cartPg:before {
   content: "----------";
   height: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   letter-spacing: 5px;
   padding-left: 5px;
   padding-right: 5px;
@@ -719,6 +777,8 @@ body {
   }
 }
 .add-new-address .modal-dialog .form-outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .add-new-address .modal-dialog .form-outer .input-group {
@@ -756,11 +816,14 @@ body {
   top: 20px;
 }
 .add-new-address .modal-dialog .adress-badge {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 @media (max-width: 450px) {
   .add-new-address .modal-dialog .adress-badge {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 .add-new-address .modal-dialog .adress-badge .badge-otr {
@@ -772,8 +835,12 @@ body {
   color: #7E7E7E;
   font-size: 15px;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 450px) {
   .add-new-address .modal-dialog .adress-badge .badge-otr {
@@ -820,5 +887,3 @@ body {
   background: rgba(255, 78, 0, 0.0784313725);
   color: #293341;
 }
-
-/*# sourceMappingURL=delivery-adress.css.map */
