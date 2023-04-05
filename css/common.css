@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /*** all Mobile Screen (iphone 6,7,8) ***/
 /*** mobile Landscape Size ***/
@@ -158,3 +159,7 @@ li {
 }
 
 /*# sourceMappingURL=common.css.map */
+=======
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");html,body{font-family:"Poppins",sans-serif;margin:0;padding:0}a{text-decoration:none;cursor:pointer}ul,li{padding:0;margin:0;list-style:none}.title-block{text-align:center;margin-bottom:100px;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}@media (max-width: 1679px){.title-block{margin-bottom:90px}}@media (max-width: 1441px){.title-block{margin-bottom:80px}}@media (max-width: 767px){.title-block{margin-bottom:50px}}@media (max-width: 575px){.title-block{margin-bottom:20px}}.title-block .title{font-weight:600;font-size:35px;color:222222;margin-bottom:10px;line-height:1.6;font-family:"Poppins",sans-serif;width:100%}.title-block .title span{font-weight:bold}@media (max-width: 1679px){.title-block .title{font-size:34px}}@media (max-width: 1441px){.title-block .title{font-size:33px}}@media (max-width: 1199px){.title-block .title{font-size:30px}}@media (max-width: 767px){.title-block .title{font-size:24px}}@media (max-width: 479px){.title-block .title{font-size:20px}}.title-block p{margin-bottom:0;color:#949393;font-size:16px;font-weight:300;line-height:1.5;font-family:"Poppins",sans-serif;letter-spacing:0.64px;max-width:700px}@media (max-width: 1679px){.title-block p{font-size:15px}}@media (max-width: 1441px){.title-block p{font-size:14px}}@media (max-width: 1199px){.title-block p{font-size:13px}}.sub-sec{padding-bottom:130px}@media (max-width: 1679px){.sub-sec{padding-bottom:120px}}@media (max-width: 1441px){.sub-sec{padding-bottom:110px}}@media (max-width: 1199px){.sub-sec{padding-bottom:100px}}@media (max-width: 767px){.sub-sec{padding-bottom:50px}}@media (max-width: 575px){.new-arrival,.info-welcome,.trand-sec,.subscribe-sec,.footer-main{padding-left:15px !important;padding-right:15px !important}}
+/*# sourceMappingURL=common.css.map */
+>>>>>>> 5f9933d310f19e8c505d9d02d0cf300e2495bedb

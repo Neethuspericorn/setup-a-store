@@ -499,20 +499,24 @@
   background: url(../img/checkbox_custom.svg) no-repeat center/cover;
 }
 
+.addCouponInput {
+  padding-top: 8px;
+}
+
 .cart-rhs {
-  padding: 28px 30px;
+  padding: 28px 20px;
   border-radius: 6px;
   background-color: #F8F8F8;
   margin-bottom: 15px;
 }
 @media screen and (max-width: 1679px) {
   .cart-rhs {
-    padding: 20px 24px;
+    padding: 20px 18px;
   }
 }
 @media screen and (max-width: 1440px) {
   .cart-rhs {
-    padding: 15px 20px;
+    padding: 15px 16px;
   }
 }
 .cart-rhs h3 {
@@ -528,14 +532,14 @@
   font-size: 12px;
 }
 
-@media screen and (min-width: 1680px) {
-  .cart-price-coupons {
-    max-width: 408px;
-  }
-}
 @media screen and (min-width: 992px) {
   .cart-price-coupons {
     max-width: 360px;
+  }
+}
+@media screen and (min-width: 1680px) {
+  .cart-price-coupons {
+    max-width: 428px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -587,6 +591,39 @@
   font-weight: bold;
 }
 
+.addedCoupons {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  font-size: 13px;
+  border: 1px solid #E4E9EE;
+  background-color: #F1F4F6;
+  border-radius: 20px;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+}
+.addedCoupons .cc-code {
+  color: #FF4E00;
+  font-weight: 600;
+}
+.addedCoupons .cc-applied {
+  padding-left: 10px;
+  color: #66829F;
+}
+.addedCoupons .cc-applied span {
+  font-weight: 500;
+}
+.addedCoupons .btn-close {
+  opacity: 1;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  margin-left: auto;
+  border-radius: 16px;
+  background: #ffffff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2366829F'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/40% auto no-repeat;
+}
+
 .couponWrap {
   display: flex;
   align-items: center;
@@ -599,6 +636,7 @@
   padding: 10px 16px;
   font-size: 12px;
   width: 100%;
+  border-radius: 6px;
   max-width: calc(100% - 135px);
 }
 @media screen and (max-width: 1679px) {
@@ -616,6 +654,7 @@
   border: none;
   color: #fff;
   min-width: 120px;
+  border-radius: 6px;
 }
 @media screen and (max-width: 1679px) {
   .btn-coupon-apply {
