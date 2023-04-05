@@ -28,8 +28,7 @@
 .banner .slick-slider {
   position: relative;
   display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -57,6 +56,9 @@
 .banner .slick-slider .slick-track,
 .banner .slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 .banner .slick-dots {
@@ -112,22 +114,14 @@
   display: none;
 }
 .banner .slider .slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .banner .slider .slide .content {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
 }
 .banner .slider .slide .content .tab-text {
   width: 100%;
@@ -178,12 +172,8 @@
 }
 .banner .slider .slide .img {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .banner .slider .slide .img img {
   max-height: 500px;
@@ -210,15 +200,9 @@
   width: 100%;
   padding: 15px;
   background-color: #E5EDF3;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 .sub-banner .mini-port .product-show .content .heading {
   width: 100%;
@@ -234,8 +218,7 @@
 .sub-banner .mini-port .product-show .content .btn-link {
   background: transparent;
   border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   text-decoration: none;
   color: #293341;
   font-size: 10px;
@@ -380,3 +363,5 @@
     font-size: 12px;
   }
 }
+
+/*# sourceMappingURL=banner.css.map */

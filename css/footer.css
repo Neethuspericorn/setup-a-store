@@ -81,19 +81,12 @@
   display: block;
 }
 .footer-main .foot-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-bottom: 50px;
 }
 .footer-main .foot-links .navbar-nav {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 .footer-main .foot-links .navbar-nav .nav-item {
   margin-left: 50px;
@@ -182,21 +175,16 @@
   }
   .footer-main .foot-links {
     padding-bottom: 20px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .footer-main .foot-links .navbar-nav {
     width: 100%;
   }
   .footer-main .foot-links .navbar-nav.social {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
   .footer-main .foot-links .navbar-nav.link-area {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   .footer-main .foot-links .navbar-nav .nav-item .nav-link {
     font-size: 13px;
@@ -211,14 +199,9 @@
     padding-bottom: 0px;
   }
   .footer-main .foot-main-row .useful-link .navbar-nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .footer-main .foot-main-row .useful-link .navbar-nav .nav-item .nav-link {
     text-align: left;
@@ -232,10 +215,7 @@
     padding-top: 0;
   }
   .footer-main .foot-links .navbar-nav.social {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     margin-top: 20px;
   }
   .footer-main .foot-links .navbar-nav.social li {
@@ -251,18 +231,14 @@
     padding-bottom: 0px;
   }
   .footer-main .useful-link .navbar-nav {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+    flex-direction: column !important;
   }
   .footer-main .foot-links .navbar-nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .footer-main .foot-links .navbar-nav .nav-item {
     margin-left: 0px;
   }
 }
+
+/*# sourceMappingURL=footer.css.map */

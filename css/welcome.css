@@ -18,13 +18,9 @@
 /*    @include flexbox();
     @include justify-content (center);*/
 .wel-sec {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 100vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 30px 0px;
   background-image: url(../img/BG-Image.png);
   background-image: url(../img/BG-Image.png);
@@ -33,16 +29,9 @@
 }
 .wel-sec .welcome-main .welcome-sec {
   max-width: 800px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(252, 252, 252, 0.8);
@@ -76,13 +65,8 @@
   background-color: #F7F7F7;
 }
 .info-welcome .info-area .info-plate {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .info-welcome .info-area .info-plate .icn {
   height: 30px;
@@ -189,3 +173,5 @@
     text-align: left;
   }
 }
+
+/*# sourceMappingURL=welcome.css.map */

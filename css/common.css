@@ -39,14 +39,9 @@ li {
 .title-block {
   text-align: center;
   margin-bottom: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 @media (max-width: 1679px) {
   .title-block {
@@ -161,3 +156,5 @@ li {
     padding-right: 15px !important;
   }
 }
+
+/*# sourceMappingURL=common.css.map */
