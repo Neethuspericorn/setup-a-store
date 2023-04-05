@@ -59,5 +59,6 @@ $(document).ready(function(){
     var slideno = $(this).data('slide');
     $('.slider-nav').slick('slickGoTo', slideno - 1);
   });
-  
+
+
 });
