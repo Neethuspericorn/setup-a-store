@@ -465,7 +465,7 @@
                                 </div>
 
                                 <div class="addCouponInput">
-                                    <a href="#" class="addCoupon">View All Coupons</a>
+                                    <a href="#" class="addCoupon"  data-bs-toggle="modal" data-bs-target="#couponModal">View All Coupons</a>
                                 </div>
                             </div>
     
@@ -749,6 +749,8 @@
     </main>
 
 
+    
+
      
     <footer>
         <!--Footer Start-->
@@ -826,6 +828,89 @@
         <!--Footer End-->
 
     </footer>
+
+
+ 
+    <!-- Modal for coupon add -->
+    <div class="modal fade coupon-modal" id="couponModal" tabindex="-1" aria-labelledby="couponModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="couponModalLabel">Coupons</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4 class="modal-subtitle">Top Offers for you</h4>
+
+                <div class="couponWrap mb-4">
+                    <input type="text" class="couponInput-field" placeholder="Coupon code">
+                    <button class="btn-coupon-apply">
+                        Apply
+                    </button>
+                </div>
+
+                <div class="coupon-item">
+                    <div class="custom-radio">
+                        <input type="radio" name="cp-select" id="cp-one">
+                        <span class="check"></span>
+                        <label for="cp-one">FIRST250</label>
+
+                        <div class="coupon-desc">
+                            <div class="desc-detail">
+                                Use code FIRST250 & get upto 250 off on minimum purchase of Rs.999.
+                            </div>
+                            <div class="expiry">
+                                Expires on : 15 April 2023 | 11:59 PM
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="coupon-item">
+                    <div class="custom-radio">
+                        <input type="radio" name="cp-select" id="cp-two">
+                        <span class="check"></span>
+                        <label for="cp-two">CART30</label>
+
+                        <div class="coupon-desc">
+                            <div class="desc-detail">
+                                Use code FIRST250 & get upto 250 off on minimum purchase of Rs.999.
+                            </div>
+                            <div class="expiry">
+                                Expires on : 15 April 2023 | 11:59 PM
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="coupon-item">
+                    <div class="custom-radio">
+                        <input type="radio" name="cp-select" id="cp-three">
+                        <span class="check"></span>
+                        <label for="cp-three">CART20</label>
+
+                        <div class="coupon-desc">
+                            <div class="desc-detail">
+                                Use code FIRST250 & get upto 250 off on minimum purchase of Rs.999.
+                            </div>
+                            <div class="expiry">
+                                Expires on : 15 April 2023 | 11:59 PM
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-place-order">Apply</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
