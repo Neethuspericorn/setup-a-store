@@ -79,6 +79,8 @@ body {
   display: flex;
   align-items: center;
   border-radius: 5px;
+  align-items: center;
+  justify-content: center;
 }
 .delivery-adrs-section .title-block.title-sec .btn-right button.add-btn-plus span {
   width: 15px;
@@ -141,6 +143,7 @@ body {
   font-size: 21px;
   font-weight: 600;
   display: flex;
+  align-items: center;
 }
 .delivery-adrs-section .delivery-box-outer .outer-dl-sec .list-sec-otr .list-adr .place-txt {
   color: #66829F;
