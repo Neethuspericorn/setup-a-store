@@ -1,0 +1,845 @@
+.orange-txt{
+    color: #FF4E00;
+}
+.opacity{
+    color: #949393;
+}
+.btn-payment{
+    display: flex;
+    flex: 0 0 100%;
+    width: 100%;
+    background-color: #FF4E00;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    color: #fff;
+    font: normal normal 500 16px/20px Poppins;
+    margin-top: 20px;
+    &:hover{
+        background-color: #ff7033;
+        color: #fff;
+    }
+}
+.cart-heading{
+    font-size: 22px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    @media (max-width:767px) {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    span.icon{
+        width: 25px;
+        display: flex;
+        padding-bottom: 5px;
+        margin-right: 14px;
+        img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.cart-headers{
+    padding-bottom: 25px;
+}
+
+.cart-contents{
+    padding: 24px;
+    padding-bottom: 40px;
+    border: 1px solid #E4E9EE;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    .cart-items{
+        align-items: stretch;
+        flex-direction: column;
+        display: flex;
+    }
+}
+
+.coupon-blks{
+    border: 1px solid #E4E9EE;
+    border-radius: 6px;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 23px;
+    align-items: flex-start;
+    flex: 0 0 auto;
+    @media (max-width:767px){
+        flex-direction: column;
+    }
+    .gift-card-show{
+        background: #F8F8F8 0% 0% no-repeat padding-box;
+        border: 1px solid #E4E9EE;
+        border-radius: 21px;
+        padding: 8px 18px;
+        font: normal normal 600 12px/18px Poppins;
+        position: relative;
+        color: #66829F;
+        display: flex;
+        align-items: center;
+       
+        .clear-card{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 25px;
+        }
+        span{
+            color: #FF4E00;
+            margin-right: 10px;
+        }
+    }
+    div{
+        &:nth-child(1){
+            @media (max-width:1199px){
+            max-width: 70%;
+            }
+            @media (max-width:767px){
+                max-width: 100%;
+                }
+        }
+    }
+    .icon{
+        margin-right: 25px;
+        display: flex;
+        align-items: center;
+    }
+    .title{
+        font: normal normal normal 16px/21px Poppins;
+        color: #293341;
+        margin-bottom: 0px;
+    }
+    p{
+        font: normal normal normal 14px/17px Poppins;
+        color: #008D58;
+        margin-bottom: 0px;
+        @media (max-width:767px){
+            font-size: 12px;
+        }
+    }
+    .gift-cta{
+        @media (max-width:767px){
+        margin-left:45px !important;
+        width: 100%;
+        margin-top: 5px;
+        }
+        @media (max-width:579px){
+            margin-left: 48px !important;
+            width: 100%;
+            margin-top: 5px;
+        }
+    }
+    .apply-gift{
+        font: normal normal 500 12px/18px Poppins;
+        color: #FF4E00;
+    }
+}
+.transparent-bg{
+    background-color: transparent;
+}
+.payment-methods{
+    .payment-left{
+        display: flex;
+        border: 1px solid #E4E9EE;
+        border-radius: 6px;
+        padding-right: 50px;
+        height: 100%;
+        @media (max-width:767px){
+            padding-right: 0px;
+        }
+        .nav-splitter{
+            @media (max-width:767px){
+                flex-direction: column;
+            }
+        }
+        .nav-pills{
+            background-color: #F8F8F8;
+            margin-right: 40px;
+            min-width: 244px;
+            height: 100%;
+            @media (max-width:767px){
+                margin-right: 0px;
+                width: 100%;
+            }
+            button{
+                background-color: transparent;
+                &.nav-link{
+                    position: relative;
+                    color: #293341;
+                    font: normal normal 500 14px/21px Poppins;
+                    text-align: left;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    @media (max-width:767px){
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+                    span{
+                        margin-right: 10px;
+                    }
+                    &.active{
+                        color: #FF4E00;
+                        background-color: #fff;
+                        &:before{
+                            content: "";
+                            width: 5px;
+                            height: 100%;
+                            position: absolute;
+                            left: 0px;
+                            top: 0px;
+                            background-color: #FF4E00;
+                        }
+                        span{
+                            img{
+                                filter: invert(32%) sepia(85%) saturate(2059%) hue-rotate(3deg) brightness(102%) contrast(108%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .tab-content{
+            font-size: 14px;
+            @media (max-width:767px){
+            width: calc(100% - 40px);    
+            margin-left: 20px;
+            margin-right: 20px;
+            }
+
+        }
+        .method-title{
+            font: normal normal 600 16px/25px Poppins;
+            color: #293341;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            @media (max-width:1199px){
+                font-size: 14px;
+            }
+        }
+        .saved-method-lists{
+            margin: 0px;
+            padding: 0px;
+            li{
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                margin-bottom: 25px;
+                padding-top: 10px;
+                .form-control{
+                    &.cvv{
+                        width: 61px;
+                        height: 40px;
+                        margin-right: 80px;
+                        margin-left: 20px;
+                        @media (min-width:768px) and (max-width:991px){
+                            margin-left: 20px;
+                            margin-right: 30px;
+                        }
+                    }
+                }
+                .card-type{
+                    width: 28px;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        max-width: 100%;
+                    }
+                }
+                .btn-paynow{
+                    display: flex;
+                    flex: 0 0 100%;
+                    background-color: #FF4E00;
+                    align-items: center;
+                    justify-content: center;
+                    height: 48px;
+                    color: #fff;
+                    font: normal normal medium 16px/20px Poppins;
+                    span{
+                        margin-left: 5px;
+                        display: inline-block;
+                    }
+                }
+                .saved-lists{
+                    display: flex;
+                    align-items: flex-start;
+                    @media (min-width:992px) and (max-width:1199px){
+                        margin-bottom: 20px;
+                    }
+                    .custom-radio-btn{
+                        margin-top: 20px;
+                    }
+                    p{
+                        font: normal normal medium 12px/18px Poppins;
+                        color: #293341;
+                        margin-bottom: 10px;
+                    }
+                    input[type="radio"]{
+                        margin-right: 15px;
+                    }
+                    .secured{
+                        color: #008D58;
+                        font: normal normal medium 10px/16px Poppins;
+                        position: relative;
+                        &::before{
+                            content: "";
+                            width: 12px;
+                            height: 12px;
+                            background: url(/img/small-chk-circle.svg) no-repeat center;
+                            display: inline-block;
+                            margin-right: 7px;
+
+                        }
+                    }
+                }
+            }
+        }
+        .validate-upi{
+            color: #293341;
+            font: normal normal normal 12px/18px Poppins;
+            p{
+                margin-bottom: 10px;
+            }
+            .form-control{
+                font: normal normal normal 12px/18px Poppins;
+                color: #949393;
+                height: 48px;
+            }
+        }
+        .choose-pay-later{
+            border: 1px solid #CFD6DE;
+            border-radius: 4px;
+            padding: 10px 15px;
+            margin-right: 23px;
+            &.active{
+                border: 1px solid #FF4E0075;
+                background-color: #FF4E001A;
+            }
+            &:last-child{
+                margin-right: 0px;
+            }
+            .custom-radio-btn{
+                label{
+                    top: 0px !important;
+                    line-height: 15px;
+                }
+            }
+        }
+        
+        .option-list{
+            margin: 0;
+            padding: 0;
+            li{
+                list-style: none;
+                
+                .provider-logo{
+                    width: 42px;
+                    height: 42px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 5px;
+                    border-radius: 50%;
+                    border: 1px solid #DAE1E8;
+                    margin-right: 15px;
+                    img{
+                        max-width: 100%;
+                        height: 20px;
+                    }
+                }
+                .provider-name{
+                    font: normal normal medium 14px/21px Poppins;
+                    color: #293341;
+                }
+            }
+        }
+        .card-form{
+            .form-control{
+                border-color: #CFD6DE;
+                height: 48px;
+                font: normal normal normal 12px/18px Poppins;
+                color: #949393;
+                &::-webkit-input-placeholder{
+                    color: #949393;
+                }
+            }
+            .card-validator{
+                position: absolute;
+                right: 25px;
+                top: 12px;
+                width: 28px;
+                height: 20px;
+                img{
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+
+.cart-table{
+    width: 100%;
+}
+
+.delivery-loc{
+    max-width: 242px;
+    .delivery-loc-input{
+        display: flex;
+        align-items: center;
+        border: 1px solid #E4E9EE;
+        border-radius: 6px;
+        padding: 8px 10px;
+    }
+    .del-field{
+        flex: auto;
+        border: none;
+        flex: 0 0 calc(100% - 68px);
+        max-width: calc(100% - 68px);
+        margin-right: 10px;
+        font-size: 14px;
+        &:focus,
+        &:focus-visible{
+            border: none;
+            outline: none;
+        }
+    }
+    .change-deli{
+        max-width: 67px;
+        font-size: 12px;
+        height: 25px;
+        border-radius: 5px;
+        border: none;
+        color: #FF4E00;
+        background-color: #ff4e0024;
+    }
+}
+
+.prodCheck{
+    width: 30px;
+}
+
+.product-det-wrp{
+    
+}
+
+// custom check
+.checkWrp{
+    width: 26px;
+    height: 26px;
+    position: relative;
+    .checkboxCustom{
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        border: 1px solid #BED2E6;
+        border-radius: 4px;
+    }
+    input[type=checkbox]{
+        opacity: 0;
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        cursor: pointer;
+        &:checked{
+            & ~ .checkboxCustom{
+                border: 1px solid #f1f6fb;
+                background: url(../img/checkbox_custom.svg) no-repeat center/cover;
+            }
+        }
+    }
+}
+
+// cart RHS items
+.apply-coupon-blk{
+    border: 1px solid #E4E9EE;
+    background-color: transparent !important;
+    border-radius: 6px;
+    font: normal normal 600 18px/27px Poppins;
+    color: #293341;
+    display: flex;
+    .link{
+        color: #FF4E00;
+        font: normal normal normal 14px/21px Poppins;
+    }
+}
+.cart-rhs{
+    padding: 28px 30px;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+    margin-bottom: 15px;
+    &.no-bg{
+        background-color: transparent;
+    }
+    &.update-address{
+        background-color: transparent;
+        border: 1px solid #E4E9EE;
+        color: #293341;
+        @media (max-width:991px){
+            margin-top: 15px;
+        }
+        a{
+            color: #293341;
+        }
+        .subtile{
+            font-weight: 600;
+        }
+        .content{
+        font: normal normal normal 14px/21px Poppins;
+        margin-bottom: 8px ;
+        }
+    }
+    h3{
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }  
+    .subtile{
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    .btn-rounded-change{
+        border: 1px solid #DAE1E8;
+        border-radius: 15px;
+        font: normal normal normal 12px/18px Poppins;
+        color: #66829F;
+        width: 88px;
+        height: 30px;
+    }
+}
+
+.cart-price-coupons{
+    max-width: 408px;
+    @media (max-width:991px){
+        max-width: 100%;
+    }
+}
+
+.priceDetails{
+    table{
+        &.cart-prices{
+            width: 100%;
+            font-size: 14px;
+            td{
+                height: 40px;
+            }
+
+            .amtValue{
+                text-align: right;
+            }
+            .spacer{
+                height: 15px;
+            }
+            .totals{
+                border-top: 1px solid #5661E838;
+                td{
+                    height: 60px;
+                }
+
+                .amtValue{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    
+}
+
+.couponWrap{
+    display: flex;
+    align-items: center;
+    .couponInput-field{
+        height: 40px;
+        margin-right: 15px;
+        border: 1px solid #E4E9EE;
+        padding: 10px 16px;
+        font-size: 12px;
+        &:focus,
+        &:focus-visible{
+             outline: none;
+        }
+    }
+}
+
+.btn-coupon-apply{
+    background-color: #66829F;
+    height: 40px;
+    border: none;
+    color: #fff;
+    min-width: 120px;
+}
+.btn-place-order{
+    width: 100%;
+    max-width: 360px;
+    background-color: #FF4E00;
+    border-radius: 4px;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    min-height: 48px;
+}
+
+.safe-info{
+    display: flex;
+    align-items: center;
+    color: #66829F;
+    font-size: 14px;
+    padding-left: 28px;
+    padding-right: 28px;
+    p{
+        margin: 0;
+    }
+
+    img{
+        width: 24px;
+        object-fit: contain;
+        margin-right: 16px;
+
+    }
+}
+
+// cart RHS items ends
+
+
+// radio btn style
+
+.custom-radio-btn{
+    position: relative;
+    label{
+        top: -13px;
+    }
+    [type="radio"]:checked,
+    [type="radio"]:not(:checked) {
+        position: absolute;
+        left: -9999px;
+    }
+    [type="radio"]:checked + label,
+    [type="radio"]:not(:checked) + label
+    {
+        position: relative;
+        padding-left: 28px;
+        cursor: pointer;
+        line-height: 20px;
+        display: inline-block;
+        color: #666;
+    }
+    [type="radio"]:checked + label:before,
+    [type="radio"]:not(:checked) + label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #ff4e00;
+        border-radius: 100%;
+        background: #fff;
+    }
+    [type="radio"]:checked + label:after,
+    [type="radio"]:not(:checked) + label:after {
+        content: '';
+        width: 9px;
+        height: 9px;
+        background: #FF4E00;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        border-radius: 100%;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+    [type="radio"]:not(:checked) + label:after {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    [type="radio"]:checked + label:after {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    }
+
+    .progressbars{
+        padding-top: 30px;
+        padding-bottom: 50px;
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            @media screen and (max-width: 1200px){
+                font-size: 12px;
+            }
+            .cartPg{
+                color: #A4AEB8;
+                display: flex;
+                align-items: center;
+                .ico{
+                    margin-right: 10px;
+                    padding-bottom: 5px;
+                    @media screen and (max-width: 1200px){
+                        padding-bottom: 2px;
+                    }
+                }
+                svg{
+                    fill: #A4AEB8;
+                    @media screen and (max-width: 1200px){
+                         width: 8px;
+                    }
+                }
+                &:before{
+                    content: '----------';
+                    height: 1px;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 5px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    color: #A4AEB8;
+                    @media screen and (max-width:991px){
+                        content: '------';
+                        letter-spacing: 3px;
+                        }
+                   @media screen and (max-width: 576px){
+                    content: '----';
+                    letter-spacing: 1px;
+                    }
+                }
+               
+                &.active{
+                    color: #FF4E00;
+                    svg{
+                        fill: #FF4E00;
+                    }
+                }
+            }
+    
+            li{
+                &:first-child{
+                    .cartPg{
+                        &:before{
+                            display: none;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+
+    .couponWrap .couponInput-field {
+        height: 40px;
+        margin-right: 15px;
+        border: 1px solid #E4E9EE;
+        padding: 10px 16px;
+        font-size: 12px;
+        width: 100%;
+        border-radius: 6px;
+        max-width: calc(100% - 135px);
+        @media (max-width:1679px){
+            max-width: calc(100% - 115px);
+        }
+    }
+    .btn-coupon-apply {
+        background-color: #66829F;
+        height: 40px;
+        border: none;
+        color: #fff;
+        min-width: 120px;
+        border-radius: 6px;
+        @media (max-width:1679px){
+            font-size: 13px;
+            min-width: 100px;
+        }
+    }
+    .coupon-modal {
+        .modal-dialog{
+            .modal-header {
+                padding-top: 10px !important;
+                border: none;
+                .modal-title{
+                    @media (max-width:1679px){
+                        font-size: 16px;
+                    }
+                }
+                .btn-close {
+                    width: 21px;
+                    height: 21px;
+                    padding: 0;
+                    opacity: 1;
+                    background-size: 0.5em;
+                    background-color: #ececec !important;
+                    border-radius: 100%;
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                }
+            }
+            .modal-body{
+                padding-top: 0px !important;
+            }
+            
+        }
+    }
+
+.coupon-modal{
+    .modal-dialog{
+    max-width: 438px;
+    .modal-header{
+        padding:38px 38px 0px;
+        border: none;
+        .modal-title{
+            font: normal normal 600 18px/27px Poppins;
+        }
+        span{
+            font: normal normal normal 11px/17px Poppins;
+            color: #008D58;
+            display: block;
+        }
+        .btn-close{
+            width: 21px;
+            height: 21px;
+            background: none;
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            &:focus{
+                box-shadow: none;
+                outline: none;
+            }
+        }
+    }
+    .modal-body{
+        padding: 30px 38px 20px;
+        .form-control{
+            border: 1px solid #E1E1E1;
+            border-radius: 6px;
+            height: 48px;
+            font: normal normal normal 12px/18px Poppins;
+            color: #000;
+        }
+    }
+    .modal-footer{
+        border: none;
+        padding: 0px 38px 43px;
+        button{
+            display: flex;
+            flex: 0 0 100%;
+            justify-content: center;
+            align-items: center;
+            height: 48px;
+            background-color: #FF4E00;
+            border-color: #FF4E00;
+            margin: 0px;
+        }
+    }
+    }
+}
