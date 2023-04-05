@@ -60,13 +60,17 @@ $(document).ready(function(){
     $('.slider-nav').slick('slickGoTo', slideno - 1);
   });
 
+  const myModalEl = document.getElementById('myModal')
+  myModalEl.addEventListener('show.bs.modal', event => {
+     
+  })
+
+  myModalEl.addEventListener('shown.bs.modal', event => {
+     
+    $('.slider-for').slick('reinit');
+  
+    $('.slider-nav').slick('reinit');
+  })
+
+
 });
-
-const myModalEl = document.getElementById('myModal')
-myModalEl.addEventListener('show.bs.modal', event => { 
-})
-
-myModalEl.addEventListener('shown.bs.modal', event => {
-$('.slider-for').slick('reinit');
-$('.slider-nav').slick('reinit');
-})
