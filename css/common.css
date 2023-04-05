@@ -287,6 +287,15 @@ li {
 }
 
 @media (max-width: 1679px) {
+  .product-wrap {
+    padding-top: 80px;
+  }
+  .breadcrumb {
+    margin-bottom: 10px;
+  }
+  .breadcrumb .breadcrumb-item {
+    font: normal 13px/17px "DM Sans", sans-serif;
+  }
   .custom-dropdown .dropdown-menu li .prf_img {
     width: 32px;
     height: 32px;
