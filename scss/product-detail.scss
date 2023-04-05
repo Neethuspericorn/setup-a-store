@@ -272,14 +272,12 @@ $product-second: #A4AEB8  !default;
                     .spc-itm{
                         margin-right: 10px;
                         padding: 3px;
+                        border: 1px solid #fff;
                         cursor: pointer;
                         &:last-child{
                             margin-right: 0px;
                         }
-                        &.active, &:hover{
-                            border: 1px solid #66829F;
-                            border-radius: 50%;
-                        }
+                       
                         .color-wheel{
                             width: 25px;
                             height: 25px;
@@ -294,6 +292,7 @@ $product-second: #A4AEB8  !default;
                             &.size{
                                 width: 45px;
                                 height: 45px;
+                                border: 1px solid #E4E9EE;
                             }
                             &.light-blue{
                                 background-color: #F0F2F2;
@@ -306,6 +305,13 @@ $product-second: #A4AEB8  !default;
                             }
                             &.light-black{
                                 background-color: #403E3D;
+                            }
+                        }
+                        &.active, &:hover{
+                            border: 1px solid #66829F;
+                            border-radius: 50%;
+                            .size{
+                                border: none !important;
                             }
                         }
                     }
@@ -785,5 +791,87 @@ $product-second: #A4AEB8  !default;
     }
     .product-details .produt-preview-panel .product-over-view .nav-tabs li {
         width: 100%;
+    }
+}
+
+
+.product-view{
+    .modal-dialog{
+        @media(min-width:575px){
+            max-width: 1100px;
+        }
+        .close{
+            position: absolute;
+            right: 4px;
+            top: 3px;
+            background-color: transparent;
+            border: none;
+            padding: 0px;
+        }
+        .product-details{
+            .coustom-container{
+                width: 100%;
+                max-width: 100%;
+            }
+            .produt-preview-panel {
+                .slider-area{
+                    border-bottom: none !important;
+                    margin: 0px;
+                    padding: 0px;
+                    height: 100%;
+                    .slider-nav{
+                        .sliders{
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                    
+                }
+            } 
+
+            .product-info-panel{
+                .product-detail-sec{
+                    padding: 0px;
+                    .product-name-area {
+                        .product-head{
+                            font-size: 18px;
+                        }
+                        .product-dec{
+                            font-size: 14px;
+                        }
+                    }
+                    .product-spc-select{
+                        .spec-head{
+                            font-size: 14px;
+                        }
+                        .spc-list{
+                            margin-top: 0px;
+                        }
+                    }
+                    .btn-secs{
+                        margin: 15px 0px;
+                        .btn{
+                            &.btn-cart{
+                                padding: 10px 50px;
+                            }
+                        }
+                    }
+                    .product-devivery-info{
+                        margin: 0px;
+                        border-bottom: 0px;
+                    }
+                    .view-more{
+                        color: #293341;
+                        font-size: 14px;
+                        display: flex;
+                        img{
+                            width: 15px;
+                            margin-left: 10px;;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

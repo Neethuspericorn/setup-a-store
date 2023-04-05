@@ -1,2 +1,121 @@
-.addCoupon{color:#FF4E00;font-size:13px}
+.addCoupon {
+  color: #FF4E00;
+  font-size: 13px;
+}
+.addCoupon:hover {
+  color: rgba(255, 77, 0, 0.8274509804);
+}
+
+.coupon-modal .modal-dialog {
+  max-width: 440px;
+}
+.coupon-modal .modal-header,
+.coupon-modal .modal-body,
+.coupon-modal .modal-footer {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.coupon-modal .modal-header {
+  padding-top: 10px;
+  border: none;
+}
+.coupon-modal .modal-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.coupon-modal .modal-footer {
+  border: none;
+  padding-bottom: 40px;
+}
+.coupon-modal .modal-title {
+  font-size: 18px;
+  padding-top: 1em;
+}
+@media screen and (max-width: 1679px) {
+  .coupon-modal .modal-title {
+    font-size: 16px;
+  }
+}
+.coupon-modal .modal-subtitle {
+  color: #293341;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.coupon-modal .btn-close {
+  width: 21px;
+  height: 21px;
+  padding: 0;
+  opacity: 1;
+  background-size: 0.5em;
+  background-color: #ececec;
+  border-radius: 100%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.coupon-modal .btn-place-order {
+  font-size: 14px;
+}
+.coupon-modal .coupon-item {
+  padding: 20px 16px;
+  border: 1px solid #E1E1E1;
+  margin-bottom: 16px;
+  border-radius: 6px;
+}
+.coupon-modal .coupon-item .custom-radio {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.coupon-modal .coupon-item .custom-radio .check {
+  border: 1px solid #293341;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  margin-right: 14px;
+  transition: all ease-in-out 0.2s;
+  background-size: 50%;
+  background-position: center;
+  flex: 0 0 16px;
+  max-width: 16px;
+  background-repeat: no-repeat;
+}
+.coupon-modal .coupon-item .custom-radio label {
+  height: 16px;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  flex: 1;
+  transition: all ease-in-out 0.2s;
+}
+.coupon-modal .coupon-item .custom-radio input[type=radio],
+.coupon-modal .coupon-item .custom-radio input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  z-index: 3;
+  opacity: 0;
+}
+.coupon-modal .coupon-item .custom-radio input[type=radio]:checked ~ .check,
+.coupon-modal .coupon-item .custom-radio input[type=checkbox]:checked ~ .check {
+  border-color: #FF4E00;
+  background-color: #FF4E00;
+  background-image: url(../img/icon-check-white.svg);
+}
+.coupon-modal .coupon-item .custom-radio input[type=radio]:checked ~ label,
+.coupon-modal .coupon-item .custom-radio input[type=checkbox]:checked ~ label {
+  color: #FF4E00;
+}
+.coupon-modal .coupon-item .coupon-desc {
+  flex: 100%;
+  width: 100%;
+  font-size: 13px;
+  padding-top: 12px;
+  padding-left: 30px;
+}
+.coupon-modal .coupon-item .coupon-desc .desc-detail {
+  margin-bottom: 8px;
+}
+
 /*# sourceMappingURL=addCoupon.css.map */

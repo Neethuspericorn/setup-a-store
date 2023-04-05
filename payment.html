@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empire</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/slick-theme.min.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/addCoupon.css">
+    <link rel="stylesheet" href="css/choose-payment.css">
+
+</head>
+<body>
+
+    <header>
+        <!--Top Bar Start-->
+        <div class="top-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="top-bar-cnt">
+                            <div class="contact">
+                                <div class="item">
+                                    <div class="icon">
+                                        <img src="img/feather-phone-call.svg"/>
+                                    </div>
+                                    <div class="text">(459)865-7064</div>
+                                </div>
+                                <div class="item">
+                                    <div class="icon">
+                                        <img src="img/feather-mail.svg"/>
+                                    </div>
+                                    <div class="text">empire@gmail.com</div>
+                                </div>
+                            </div>
+                            <div class="offer">
+                                <div class="text">Summer sale discount off 50%! Shop Now</div>
+                            </div>
+                            <div class="info">
+                                <div class="item">
+                                    <div class="icon">
+                                        <img src="img/location.svg"/>
+                                    </div>
+                                    <div class="text">Location</div>
+                                </div>
+                                <div class="item">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          English
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#">Language 1</a></li>
+                                          <li><a class="dropdown-item" href="#">Language 2</a></li>
+                                          <li><a class="dropdown-item" href="#">Language 3</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="item">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <div class="flg">
+                                            <img src="img/flag.png"/>
+                                          </div>  
+                                          <span>USD</span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <div class="flg">
+                                                        <img src="img/flag.png"/>
+                                                    </div> 
+                                                    <span>UK</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Top Bar END-->
+        <!--Nav Bar Start-->
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h3 class="logo-text">Empire</h3>
+                </a>
+
+                <ul class="navbar-nav notification ml-auto order-md-3">
+                    <li><a href="#" target="_blank" rel="noopener noreferrer" class="icn-set"><img src="img/ionic-ios-search.svg" alt=""></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer" class="icn-set"><img src="img/feather-user.svg" alt=""><span class="badge badge-light">9</span></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer" class="icn-set"><img src="img/ionic-md-heart-empty.svg" alt=""></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer" class="icn-set"><img src="img/feather-shopping-cart.svg" alt=""><span class="badge badge-light">9</span></a></li>
+                </ul>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">New Arrivals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Deals For You</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <!--Nab Bar End-->
+    </header>
+
+    <main>
+         <section class="cart-details">
+            <!-- cart header  -->
+            <div class="container cart-headers">
+                <div class="row">
+                    <div class="col">
+                        <div class="progressbars">
+                            <ul class="cart-prog">
+                                <li>
+                                    <a href="#" class="cartPg">
+                                        <span class="ico">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="11.031" height="12.476" viewBox="0 0 11.031 12.476">
+                                                <path id="Vector" d="M10.481,4.343A2.885,2.885,0,0,0,8.56,3.519V3.045A3.05,3.05,0,0,0,5.217.014,3.211,3.211,0,0,0,2.472,3.158v.362a2.885,2.885,0,0,0-1.921.823,2.743,2.743,0,0,0-.518,2.2L.47,10.013c.131,1.216.624,2.464,3.306,2.464H7.256c2.682,0,3.175-1.247,3.306-2.458L11,6.532A2.758,2.758,0,0,0,10.481,4.343ZM5.3.881A2.174,2.174,0,0,1,7.693,3.045v.437H3.339V3.158A2.346,2.346,0,0,1,5.3.881ZM3.283,6.956H3.277a.627.627,0,1,1,.006,0Zm4.366,0H7.643a.627.627,0,1,1,.006,0Z"></path>
+                                              </svg>
+                                              
+                                        </span>
+                                        <span class="txt">Cart</span>
+                                        
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="cartPg ">
+                                        <span class="ico">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10.913" height="12.604" viewBox="0 0 10.913 12.604">
+                                                <path id="Vector" d="M10.759,4.119A5.3,5.3,0,0,0,5.459,0H5.453a5.3,5.3,0,0,0-5.3,4.113c-.719,3.172,1.223,5.859,2.982,7.55a3.334,3.334,0,0,0,4.642,0C9.536,9.972,11.478,7.292,10.759,4.119ZM5.459,7.2A1.937,1.937,0,1,1,7.4,5.263,1.936,1.936,0,0,1,5.459,7.2Z"></path>
+                                              </svg>
+                                              
+                                        </span>
+                                        <span class="txt">Address</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="cartPg active">
+                                        <span class="ico">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10.919" viewBox="0 0 13 10.919">
+                                                <path id="Union_15" data-name="Union 15" d="M13627.457-9589.081c-1.962,0-2.457-.47-2.457-2.341v-1.825a.643.643,0,0,1,.65-.628h9.752a.642.642,0,0,1,.649.628v1.927c-.021,1.789-.528,2.239-2.46,2.239Zm1.676-2a.485.485,0,0,0,.489.472h2.234a.479.479,0,0,0,.489-.472.485.485,0,0,0-.489-.472h-2.234A.485.485,0,0,0,13629.133-9591.083Zm-2.507,0a.482.482,0,0,0,.487.472h1.111a.484.484,0,0,0,.493-.472.483.483,0,0,0-.486-.472h-1.118A.483.483,0,0,0,13626.626-9591.083Zm10.381-.9v-4.5a2.6,2.6,0,0,0-2.646-2.555h-7.066c-.167,0-.258-.178-.143-.284a2.274,2.274,0,0,1,.8-.468,3.767,3.767,0,0,1,1.326-.215h5.8c1.757,0,2.919.854,2.919,2.818v3.286a2.8,2.8,0,0,1-.7,2.048.166.166,0,0,1-.118.052A.179.179,0,0,1,13637.007-9591.98Zm-11.356-2.838a.641.641,0,0,1-.65-.625v-.365c0-1.7.41-2.238,1.949-2.328.158-.006.326-.012.508-.012h6.135c1.965,0,2.46.469,2.46,2.34v.365a.641.641,0,0,1-.649.625Z" transform="translate(-13625 9600)"></path>
+                                              </svg>
+                                        </span>
+                                        <span class="txt">Payment</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex align-items-center">
+                        <h3 class="cart-heading"> <span class="icon"><img src="img/choose-payment-mode.svg" alt="cart"></span> Choose Payment Mode</h3>
+                    </div>
+
+                    <div class="col delivery-loc">
+                        <div class="delivery-loc-input">
+                            <input type="text" class="del-field" value="Delhi, 110001">
+                            <button class="change-deli">Change</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container cart-contents">
+                <div class="row">
+                    <div class="col-lg cart-items">
+                        <div class="col-lg coupon-blks">
+                            <div class="d-flex">
+                                <span class="icon">
+                                    <img src="/img/coupon-box.svg" alt="coupon">
+                                </span>
+                                <div class="d-flex flex-column me-auto">
+                                <h2 class="title">Have a Gift Card?</h2>
+                                <p>Redeem your gift card to pay using Lorem Ipsum Cash</p>
+                                </div>
+                            </div>
+                            <div class="ms-auto gift-cta">
+                                <a class="apply-gift" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Apply Gift Card</a>
+                                <div class="gift-card-show d-none"><span>XUJD-KBFPH7-D3GE</span> Gift Card Applied <a class="clear-card"><img src="/img/coupon-close.svg" alt=""></a></div>
+                            </div>
+                        </div>
+                        <div class="col-lg payment-methods">
+                            <div class="payment-left flex-fill">
+                                <div class="nav-splitter d-flex align-items-start flex-fill">
+                                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                      <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#saved-payments" type="button" role="tab" aria-controls="saved-payments" aria-selected="true"><span><img src="/img/Icon feather-star.svg" alt=""></span> Payment Options</button>
+                                      <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#cod" type="button" role="tab" aria-controls="cod" aria-selected="false"><span><img src="/img/Icon payment-cash.svg" alt=""></span>Cash On Delivery</button>
+                                      <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#credit" type="button" role="tab" aria-controls="credit" aria-selected="false"><span><img src="/img/cards-icon.svg" alt=""></span>Credit/Debit Card</button>
+                                      <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#upi" type="button" role="tab" aria-controls="upi" aria-selected="false"><span><img src="/img/Icon payment-cash.svg" alt=""></span>UPI</button>
+                                      <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#wallets" type="button" role="tab" aria-controls="wallets" aria-selected="false"><span><img src="/img/wallets.svg" alt=""></span>Wallets</button>
+                                      <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#net-banking" type="button" role="tab" aria-controls="net-banking" aria-selected="false"><span><img src="/img/net-banking.svg" alt=""></span>Net Banking</button>
+                                      <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#pay-later" type="button" role="tab" aria-controls="pay-later" aria-selected="false"><span><img src="/img/pay-later.svg" alt=""></span>EMI/ Pay Later</button>
+                                    </div>
+                                    <div class="tab-content flex-fill" id="v-pills-tabContent">
+                                      <div class="tab-pane fade show active" id="saved-payments" role="tabpanel" aria-labelledby="saved-payments">
+                                        <h2 class="method-title">Pay Using Saved Options</h2>
+                                        <ul class="saved-method-lists">
+                                            <li class="flex-fill">
+                                                <div class="saved-lists flex-fill">
+                                                    <div class="custom-radio-btn">
+                                                        <input id="payment1" type="radio" checked name="payments">
+                                                        <label for="payment1"></label>
+                                                    </div>
+                                                    <div>
+                                                        <p>HDFC Debit Card</p>
+                                                        <p>****7847</p>
+                                                        <span class="secured">Secured</span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <input type="text" class="form-control cvv" placeholder="CVV">
+                                                    <div class="card-type">
+                                                        <img class="" src="/img/master-card.svg">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="flex-fill"><button class="btn btn-paynow">Pay Now <span>($120.00)</span></button></li>
+                                            <li class="flex-fill">
+                                            <div class="saved-lists flex-fill">    
+                                                <div class="custom-radio-btn">
+                                                    <input id="payment2" type="radio" name="payments">
+                                                    <label for="payment2"></label>
+                                                </div>
+                                                <div>
+                                                    <p>HDFC Debit Card</p>
+                                                    <p>****7847</p>
+                                                    <span class="secured">Secured</span>
+                                                </div>
+                                            </div>
+                                                <!-- <input type="text" class="form-control cvv" placeholder="CVV"> -->
+                                                <div class="card-type">
+                                                    <img class="" src="/img/master-card.svg">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                      </div>
+                                      <div class="tab-pane fade" id="cod" role="tabpanel" aria-labelledby="cod">
+                                        <h2 class="method-title">Cash on Delivery</h2>
+                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                        <p class="orange-txt cod-text">COD charges applicable - $10.00 <span><img src="/img/tool-tip-orange.svg" alt=""></span></p>
+                                        <button class="btn btn-payment">Place Order</button>
+                                      </div>
+                                      <div class="tab-pane fade" id="credit" role="tabpanel" aria-labelledby="credit">
+                                        <h2 class="method-title">Credit/Debit Card</h2>
+                                        <p class="opacity">Please ensure your card can be used for online transactions</p>
+                                        <form class="card-form mt-1">
+                                            <div class="row mb-3">
+                                                <div class="col-lg-12 position-relative">
+                                                    <input type="text" class="form-control" id="" placeholder="Card Number">
+                                                    <div class="card-validator">
+                                                        <img src="/img/ionic-ios-card.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-lg-12">
+                                                    <input type="text" class="form-control" id="" placeholder="Name on card">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-4">
+                                                <div class="col-lg-7 px-2">
+                                                    <input type="text" class="form-control" id="" placeholder="Valid Thru (MM/YY)">
+                                                </div>
+                                                <div class="col-lg-5 px-2">
+                                                    <input type="text" class="form-control" id="" placeholder="CVV">
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-payment">Pay Now</button>
+                                        </form>
+                                      </div>
+                                      <div class="tab-pane fade" id="upi" role="tabpanel" aria-labelledby="upi">
+                                        <h2 class="method-title">Pay Using UPI</h2>
+                                        <ul class="option-list">
+                                            <li>
+                                                <div class="d-flex align-items-center mb-3"> 
+                                                    <div class="custom-radio-btn">
+                                                        <input id="gpay" type="radio" checked name="payments">
+                                                        <label for="gpay"></label>
+                                                    </div>
+                                                    <div class="provider-logo">
+                                                        <img src="/img/gpay.svg" alt="">
+                                                    </div>
+                                                    <div class="provider-name">
+                                                        Google Pay
+                                                    </div>
+                                                </div>
+                                                <div class="validate-upi mb-4">
+                                                <p>Please provide valid UPI handle i.e (Virtual Payment Address)</p>
+                                                <div class="row mb-3">
+                                                    <div class="col-lg-12">
+                                                        <input type="text" class="form-control" id="" placeholder="Enter UPI ID here">
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-payment mt-0">Pay Now</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-center mb-3"> 
+                                                    <div class="custom-radio-btn">
+                                                        <input id="PhonePe" type="radio" checked="" name="payments">
+                                                        <label for="PhonePe"></label>
+                                                    </div>
+                                                    <div class="provider-logo">
+                                                        <img src="/img/phonepe.png" alt="">
+                                                    </div>
+                                                    <div class="provider-name">
+                                                        PhonePe
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-center mb-3"> 
+                                                    <div class="custom-radio-btn">
+                                                        <input id="upi" type="radio" checked="" name="payments">
+                                                        <label for="upi"></label>
+                                                    </div>
+                                                    <div class="provider-logo">
+                                                        <img src="/img/upi.svg" alt="">
+                                                    </div>
+                                                    <div class="provider-name">
+                                                        UPI
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                      </div>
+                                      <div class="tab-pane fade" id="wallets" role="tabpanel" aria-labelledby="wallets">
+                                        <h2 class="method-title">Wallets</h2>
+                                        <ul class="option-list">
+                                            <li>
+                                                <div class="d-flex align-items-center mb-3"> 
+                                                    <div class="custom-radio-btn">
+                                                        <input id="paytm" type="radio" checked name="payments">
+                                                        <label for="paytm"></label>
+                                                    </div>
+                                                    <div class="provider-logo">
+                                                        <img src="/img/paytm.svg" alt="">
+                                                    </div>
+                                                    <div class="provider-name">
+                                                        Paytm
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-payment mb-4">Pay Now</button>
+                                                <!-- <div class="validate-upi mb-4">
+                                                <p>Please provide valid UPI handle i.e (Virtual Payment Address)</p>
+                                                <button class="btn btn-payment mt-0">Pay Now</button>
+                                                </div> -->
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-center mb-3"> 
+                                                    <div class="custom-radio-btn">
+                                                        <input id="amazon" type="radio" checked="" name="payments">
+                                                        <label for="amazon"></label>
+                                                    </div>
+                                                    <div class="provider-logo">
+                                                        <img src="/img/amazon.svg" alt="">
+                                                    </div>
+                                                    <div class="provider-name">
+                                                        Amazon Pay
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-center mb-3"> 
+                                                    <div class="custom-radio-btn">
+                                                        <input id="freecharge" type="radio" checked="" name="payments">
+                                                        <label for="freecharge"></label>
+                                                    </div>
+                                                    <div class="provider-logo">
+                                                        <img src="/img/freecharge.svg" alt="">
+                                                    </div>
+                                                    <div class="provider-name">
+                                                        Freecharge
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                      </div>
+                                      <div class="tab-pane fade" id="net-banking" role="tabpanel" aria-labelledby="net-banking">
+                                        <h2 class="method-title">Net Banking</h2>
+                                        <ul class="option-list">
+                                            <li>
+                                                <div class="d-flex align-items-center mb-3"> 
+                                                    <div class="custom-radio-btn">
+                                                        <input id="axis" type="radio" checked name="payments">
+                                                        <label for="axis"></label>
+                                                    </div>
+                                                    <div class="provider-logo">
+                                                        <img src="/img/axis.svg" alt="">
+                                                    </div>
+                                                    <div class="provider-name">
+                                                        Axis Bank
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-payment mb-4">Pay Now</button>
+                                                <!-- <div class="validate-upi mb-4">
+                                                <p>Please provide valid UPI handle i.e (Virtual Payment Address)</p>
+                                                <button class="btn btn-payment mt-0">Pay Now</button>
+                                                </div> -->
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-center mb-3"> 
+                                                    <div class="custom-radio-btn">
+                                                        <input id="hdfc" type="radio" checked="" name="payments">
+                                                        <label for="hdfc"></label>
+                                                    </div>
+                                                    <div class="provider-logo">
+                                                        <img src="/img/hdfc.svg" alt="">
+                                                    </div>
+                                                    <div class="provider-name">
+                                                        HDFC Bank
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-center mb-3"> 
+                                                    <div class="custom-radio-btn">
+                                                        <input id="icic" type="radio" checked="" name="payments">
+                                                        <label for="icic"></label>
+                                                    </div>
+                                                    <div class="provider-logo">
+                                                        <img src="/img/icic.svg" alt="">
+                                                    </div>
+                                                    <div class="provider-name">
+                                                        ICICI Bank
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-center mb-3"> 
+                                                    <div class="custom-radio-btn">
+                                                        <input id="sbi" type="radio" checked="" name="payments">
+                                                        <label for="sbi"></label>
+                                                    </div>
+                                                    <div class="provider-logo">
+                                                        <img src="/img/sbi.svg" alt="">
+                                                    </div>
+                                                    <div class="provider-name">
+                                                        SBI Bank
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                      </div>
+                                      <div class="tab-pane fade" id="pay-later" role="tabpanel" aria-labelledby="pay-later">
+                                        <h2 class="method-title">EMI/ Pay Later</h2>
+                                        <div class="d-flex align-items-center mb-4">
+                                            <div class="choose-pay-later flex-fill  active">
+                                                <div class="custom-radio-btn">
+                                                    <input id="emi" type="radio" checked="" name="payments">
+                                                    <label for="emi">EMI</label>
+                                                </div>
+                                            </div>
+                                            <div class="choose-pay-later flex-fill">
+                                                <div class="custom-radio-btn">
+                                                    <input id="paylater" type="radio" checked="" name="payments">
+                                                    <label for="paylater">Pay later</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="option-list">
+                                            <li>
+                                                <div class="d-flex align-items-center mb-3"> 
+                                                    <div class="custom-radio-btn">
+                                                        <input id="hdfc" type="radio" checked="" name="payments">
+                                                        <label for="hdfc"></label>
+                                                    </div>
+                                                    <div class="provider-logo">
+                                                        <img src="/img/hdfc.svg" alt="">
+                                                    </div>
+                                                    <div class="provider-name">
+                                                        Credit Card / Debit Card EMI
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-payment mb-4">Pay Now</button>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-center mb-3"> 
+                                                    <div class="custom-radio-btn">
+                                                        <input id="ICICI" type="radio" checked="" name="payments">
+                                                        <label for="ICICI"></label>
+                                                    </div>
+                                                    <div class="provider-logo">
+                                                        <img src="/img/icic.svg" alt="">
+                                                    </div>
+                                                    <div class="provider-name">
+                                                        ICICI Bank PayLater
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-center mb-3"> 
+                                                    <div class="custom-radio-btn">
+                                                        <input id="LazyPay" type="radio" checked="" name="payments">
+                                                        <label for="LazyPay"></label>
+                                                    </div>
+                                                    <div class="provider-logo">
+                                                        <img src="/img/lazypay.svg" alt="">
+                                                    </div>
+                                                    <div class="provider-name">
+                                                        LazyPay
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-center mb-3"> 
+                                                    <div class="custom-radio-btn">
+                                                        <input id="Simpl" type="radio" checked="" name="payments">
+                                                        <label for="Simpl"></label>
+                                                    </div>
+                                                    <div class="provider-logo">
+                                                        <img src="/img/simpl.svg" alt="">
+                                                    </div>
+                                                    <div class="provider-name">
+                                                        Simpl
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex align-items-center mb-3"> 
+                                                    <div class="custom-radio-btn">
+                                                        <input id="hdfc-flexi" type="radio" checked="" name="payments">
+                                                        <label for="hdfc-flexi"></label>
+                                                    </div>
+                                                    <div class="provider-logo">
+                                                        <img src="/img/hdfc.svg" alt="">
+                                                    </div>
+                                                    <div class="provider-name">
+                                                        FlexiPay by HDFC Bank
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col cart-price-coupons">
+                        <div class="cart-rhs update-address d-flex flex-fill">
+                            <div>
+                                <h3>Delivery Address</h3>
+                                <p class="subtile">Eliza Diaz</p>
+                                <p class="content">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</p>
+                                <p class="content">Email :<a href="mailto:steve.reid@mail.com"> steve.reid@mail.com</a></p>
+                                <p class="content">Mobile : <a href="tel:+(285)054-4369">(285)054-4369</a></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-rounded-change">Change</button>
+                            </div>
+                        </div>
+
+                        <div class="cart-rhs no-bg apply-coupon-blk">
+                            <span>Coupon</span>
+                            <a class="ms-auto link" data-bs-toggle="modal" data-bs-target="#couponModal" data-bs-whatever="@mdo">Apply coupon code</a>
+                        </div>
+
+                        <div class="cart-rhs priceDetails">
+                            <h3>Price Details</h3>
+                            <table class="cart-prices">
+                                <tr>
+                                    <td>Items Total</td>
+                                    <td class="amtValue">$ 136.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Discount</td>
+                                    <td class="amtValue">- $ 16.00</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Coupon Discount</td>
+                                    <td class="amtValue">$ 00.00</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Delivery</td>
+                                    <td class="amtValue">$ 00.00</td>
+                                </tr>
+                                <tr>
+                                    <td colspan=2 class="spacer"></td>
+                                </tr>
+                                <tr class="totals">
+                                    <td>Total (3 Items)</td>
+                                    <td class="amtValue">$ 120.00</td>
+                                </tr>
+                            </table>
+
+                            <!-- <button class="btn-place-order">Place Order <span class="orderTotal">($120.00)</span></button> -->
+                        </div>
+                        <div class="safe-info">
+                            <img src="img/security.svg" alt="security">
+                            <p class="txt">Safe and secure payments. Easy returns. 100% Authentic products.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+           
+         </section>
+         
+    </main>
+
+
+     
+    <footer>
+        <!--Footer Start-->
+        <div class="footer-main">
+            <div class="container">
+                <div class="row foot-main-row">
+                    <div class="col-md-9 logo-main">
+                        <div class="fot-text">
+                            <!-- <h3 class="logo-txt">Empire</h3> -->
+                            <a href="#" class="navbar-brand"><img src="/img/logo.svg" alt=""></a>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 useful-link">
+                        <h2 class="ftr-title">
+                            Contact
+                        </h2>
+                        <p class="content-ftr">Feel free get in touch with us via phone or send us a message</p>
+                        <p class="content-ftr tel">
+                            <a href="tel:+1 234 567 89 10" class="links">+1 234 567 89 10</a>
+                            <a href="mailto:support@dummy.com" class="links">Support@dummy.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 foot-links">
+                        <ul class="navbar-nav mr-auto social">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <img src="img/facebook-f.svg"/>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <img src="img/twitter.svg"/>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <img src="img/linkedin-in.svg"/>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <img src="img/instagram.svg"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto link-area">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Return Policy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#"  class="nav-link">Privacy Policy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Help</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 copyright">
+                        <p>Copyright © Emipire dEcors. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer End-->
+
+        <!-- gift card modal -->
+        <div class="modal fade coupon-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Apply Gift Card<span>Redeem your gift card to pay using Wallet.</span></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="/img/coupon-close.svg" alt=""></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="recipient-name" Value="Voucher Number">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="recipient-name" Value="Voucher PIN">
+                      </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- gift card modal -->
+
+          <!-- Modal for coupon add -->
+    <div class="modal fade coupon-modal" id="couponModal" tabindex="-1" aria-labelledby="couponModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title" id="couponModalLabel">Coupons</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4 class="modal-subtitle">Top Offers for you</h4>
+
+                <div class="couponWrap mb-4">
+                    <input type="text" class="couponInput-field" placeholder="Coupon code">
+                    <button class="btn-coupon-apply">
+                        Apply
+                    </button>
+                </div>
+
+                <div class="coupon-item">
+                    <div class="custom-radio">
+                        <input type="radio" name="cp-select" id="cp-one">
+                        <span class="check"></span>
+                        <label for="cp-one">FIRST250</label>
+
+                        <div class="coupon-desc">
+                            <div class="desc-detail">
+                                Use code FIRST250 & get upto 250 off on minimum purchase of Rs.999.
+                            </div>
+                            <div class="expiry">
+                                Expires on : 15 April 2023 | 11:59 PM
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="coupon-item">
+                    <div class="custom-radio">
+                        <input type="radio" name="cp-select" id="cp-two">
+                        <span class="check"></span>
+                        <label for="cp-two">CART30</label>
+
+                        <div class="coupon-desc">
+                            <div class="desc-detail">
+                                Use code FIRST250 & get upto 250 off on minimum purchase of Rs.999.
+                            </div>
+                            <div class="expiry">
+                                Expires on : 15 April 2023 | 11:59 PM
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="coupon-item">
+                    <div class="custom-radio">
+                        <input type="radio" name="cp-select" id="cp-three">
+                        <span class="check"></span>
+                        <label for="cp-three">CART20</label>
+
+                        <div class="coupon-desc">
+                            <div class="desc-detail">
+                                Use code FIRST250 & get upto 250 off on minimum purchase of Rs.999.
+                            </div>
+                            <div class="expiry">
+                                Expires on : 15 April 2023 | 11:59 PM
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-place-order">Apply</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    </footer>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

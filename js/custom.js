@@ -59,5 +59,18 @@ $(document).ready(function(){
     var slideno = $(this).data('slide');
     $('.slider-nav').slick('slickGoTo', slideno - 1);
   });
+
+  const myModalEl = document.getElementById('myModal')
+  myModalEl.addEventListener('show.bs.modal', event => {
+     
+  })
+
+  myModalEl.addEventListener('shown.bs.modal', event => {
+     
+    $('.slider-for').slick('reinit');
   
+    $('.slider-nav').slick('reinit');
+  })
+
+
 });
