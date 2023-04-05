@@ -179,9 +179,15 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12 title-block title-sec p-0">
-                        <h3 class="title mb-0">Select Delivery Address</h3>
+                        <h3 class="title mb-0">
+                            <img src="img/del-icn.svg" alt="">
+                            Select Delivery Address
+                        </h3>
                         <div class="btn-right">
-                            <button class="add-btn-plus">Add New Address</button>
+                            <button class="add-btn-plus" data-bs-toggle="modal" data-bs-target="#add-address">
+                                <span>+</span>
+                                Add New Address
+                            </button>
                         </div>
                     </div>
                    
@@ -377,5 +383,89 @@
         <!--Footer End-->
 
     </footer>
+
+    <!-- Modal add new address-->
+    <div class="modal fade add-new-address" id="add-address" tabindex="-1" aria-labelledby="add-address" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add Address</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h3 class="form-header">Contact Details</h3>
+                <div class="form-outer row col-md-12">
+                    <div class="input-group-field col-md-6">
+                        <input type="text" class="form-control" placeholder="First Name">
+                      </div>
+                      <div class="input-group-field col-md-6">
+                        <input type="text" class="form-control" placeholder="Last Name">
+                      </div>
+                      <div class="input-group-field col-md-6">
+                        <input type="text" class="form-control" placeholder="Phone Number">
+                      </div>
+                      <div class="input-group-field col-md-6">
+                        <input type="text" class="form-control" placeholder="Email Address">
+                      </div>
+                </div>
+                <h3 class="form-header">Address</h3>
+                <div class="form-outer row col-md-12">
+                    <div class="input-group-field col-md-12">
+                        <input type="text" class="form-control" placeholder="Pincode">
+                      </div>
+                      <div class="input-group-field col-md-12">
+                        <input type="text" class="form-control" placeholder="Flat, House No., Building, Company, Apartment">
+                      </div>
+                      <div class="input-group-field col-md-12">
+                        <input type="text" class="form-control" placeholder="Landmark">
+                      </div>
+                      <div class="input-group-field col-md-6">
+                        <input type="text" class="form-control" placeholder="Area, Street, Sector, Village">
+                      </div>
+                      <div class="input-group-field col-md-6">
+                        <input type="text" class="form-control" placeholder="Locality/Town">
+                      </div>
+                      <div class="input-group-field col-md-6">
+                        <input type="text" class="form-control" placeholder="City/District">
+                      </div>
+                      <div class="input-group-field col-md-6">
+                        <div class="custom-selectbox">
+                            <select class="form-control">
+                                <option>State</option>
+                            </select>
+                        </div>
+                        
+                      </div>  
+                </div>
+                <h3 class="form-header">Save Address As</h3>
+                <div class="adress-badge">
+                    <div class="badge-otr active">
+                        <div class="img-icn">
+                            <img src="img/house-icn.svg">
+                        </div>
+                        <span>Residential Address</span>
+                    </div>
+                    <div class="badge-otr">
+                        <div class="img-icn">
+                            <img src="img/build-icn.svg">
+                        </div>
+                        <span>Office Address</span>
+                    </div>
+                </div>
+                <div class="checkbx-outr">
+                    <label class="container-check">Save this as my default address
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-grey" data-bs-dismiss="modal">Reset</button>
+            <button type="button" class="btn btn-primary btn-main">Add Address</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
    </body>
 </html>

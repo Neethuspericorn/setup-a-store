@@ -1,3 +1,9 @@
+@import "partials/partials";
+body{
+    font-family: $font-primary;
+    margin: 0;
+    padding: 0;
+}
 .delivery-adrs-section
 {
     .title-block.title-sec
@@ -23,6 +29,13 @@
         .title
         {
             font-size: 25px;
+            display: flex;
+            align-items: center;
+            img
+            {
+                height: 20px;
+                margin-right: 8px;
+            }
             @media(max-width:1679px)
             {
                 font-size: 20px;
@@ -45,6 +58,23 @@
                 background: #fff;
                 border: 1px solid #DAE1E8;
                 height: 41px;
+                display: flex;
+                align-items: center;
+                border-radius:5px;
+                align-items: center;
+                justify-content: center;
+                span
+                {
+                    width: 15px;
+                    height: 15px;
+                    display: inline-block;
+                    background: #FF4E00;
+                    color: #ffff;
+                    border-radius: 50px;
+                    margin-right: 5px;
+                    line-height: 17px;
+                    font-weight: 500;
+                }
                 &:hover
                 {
                     background: #FF4E00;
@@ -99,6 +129,7 @@
                         font-size: 21px;
                         font-weight: 600;
                         display: flex;
+                        align-items: center;
                     }
                     .place-txt
                     {
@@ -282,7 +313,7 @@
   }
   
   /* Create a custom radio button */
-  .checkmark {
+  .container-radio .checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -306,7 +337,7 @@
   }
   
   /* Create the indicator (the dot/circle - hidden when not checked) */
-  .checkmark:after {
+  .container-radio .checkmark:after {
     content: "";
     position: absolute;
     display: none;
@@ -326,7 +357,78 @@
     border-radius: 50%;
     background: #FF4E00;
   }
-
+  /* The container */
+.container-check {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size:14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #6F7B8B;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .container-check .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container-check:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container-check input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .container-check .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container-check input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container-check .checkmark:after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .checkbx-outr
+  {
+    margin-top:25px;
+  }
   .priceDetails{
     table{
         &.cart-prices{
@@ -503,6 +605,202 @@
                     &:before{
                         display: none;
                     } 
+                }
+            }
+        }
+    }
+}
+.add-new-address
+{
+    .btn-grey{
+        border: 1px solid #DAE1E8;
+        background: #F1F4F6;
+        color: #66829F;
+        width: 48%;
+        border-radius: 4px;
+        height: 45px;
+        &:hover
+        {
+            border: 1px solid #FF4E00;
+            color: #FF4E00
+        }
+        @media(max-width:1679px)
+        {
+            font-size: 14px;
+        }
+        @media(max-width:470px)
+        {
+            width: 100%;
+
+        }
+    }
+    .btn-main{
+        width: 48%;
+        background: #FF4E00;
+        border-radius: 4px;
+        border-color: #FF4E00;
+        border-radius: 4px;
+        height: 45px;
+        &:hover
+        {
+            background: #eb6226;
+        }
+        @media(max-width:1679px)
+        {
+            font-size: 14px;
+        }
+        @media(max-width:470px)
+        {
+            width: 100%;
+        }
+    }
+    .modal-dialog
+    {
+        max-width:620px;
+        @media(max-width:1679px)
+            {
+                max-width:600px;
+            }
+        .modal-title
+        {
+            color: #222222;
+            font-size: 18px;
+            font-weight: 600;
+            padding-left: 28px;
+            @media(max-width:1679px)
+            {
+                font-size: 16px;
+            }
+            @media(max-width:767px)
+            {
+                padding-left: 0px;
+            }
+        }
+        .modal-body
+        {
+            padding: 19px 20px 19px 45px;
+            @media(max-width:1679px)
+            {
+                padding: 19px 11px 10px 32px;
+            }
+            @media(max-width:767px)
+            {
+                padding: 19px 15px 10px 15px;
+            }
+        }
+        .form-header
+        {
+            color: #293341;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            @media(max-width:1679px)
+            {
+                font-size: 14px;
+            }
+        }
+        .form-outer
+        {
+            display:flex;
+            .input-group
+            {
+                margin-right:5px;
+            }
+           .form-control {
+                border: 1px solid #E1E1E1;
+                border-radius: 5px;
+                height: 48px;
+                padding-left: 18px;
+                margin-bottom: 15px;
+                @media(max-width:1679px)
+                {
+                    font-size: 14px;
+                    height: 42px;
+                    padding-left: 13px;
+                    margin-bottom: 11px;
+                }
+            }
+           
+        }
+        .custom-selectbox
+        {
+            position: relative;
+        }
+        .custom-selectbox::after {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-left: solid 8px transparent;
+            border-right: solid 8px transparent;
+            border-top: solid 8px #c3c4c6;
+            z-index: 1;
+            pointer-events: none;
+            right: 15px;
+            top:20px;
+        }
+        .adress-badge
+        {
+            display: flex;
+            @media(max-width:450px)
+            {
+                flex-wrap:wrap;
+            }
+            .badge-otr {
+                background: #F1F4F670;
+                border: 1px solid #DAE1E86E;
+                border-radius: 25px;
+                margin-right: 14px;
+                padding: 10px 21px;
+                color: #7E7E7E;
+                font-size: 15px;
+                cursor: pointer;
+                display:flex;
+                align-items:center;
+                @media(max-width:450px)
+                {
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 9px;
+                }
+                @media(max-width:1679px)
+                {
+                    padding: 6px 16px;
+                    font-size: 13px;
+                }
+                .img-icn
+                {
+                    width: 27px;
+                    height: 27px;
+                    background: #fff;
+                    border-radius: 100px;
+                    text-align: center;
+                    margin-right: 8px;
+                    img
+                    {
+                        width: 16px;
+                        @media(max-width:1679px)
+                        {
+                            width: 14px;
+                        }
+                    }
+                    @media(max-width:1679px)
+                    {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+                &.active
+                {
+                    border: 1px solid #FF4E0063;
+                    background: #FF4E0014;
+                    color: #293341;
+                }
+                &:hover
+                {
+                    border: 1px solid #FF4E0063;
+                    background: #FF4E0014;
+                    color: #293341;
                 }
             }
         }
