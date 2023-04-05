@@ -102,6 +102,37 @@ li {
     }
 }
 
+
+.custom-dropdown{
+    .dropdown-menu{
+        position: absolute;
+        transform: translate(-50%, 20px);
+        left: 50%;
+        padding: 0;
+        width: 265px;
+        box-shadow: 0px 3px 21px #00000029;
+border: 1px solid #EFEFEF;
+border-radius: 13px;
+        li {
+            margin-right: 0 !important;
+            
+            .dropdown-item{
+                height: 60px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .dropdown-toggle::after{
+        display: none;
+    }
+}
+
+
+
+
+
+
 @media(max-width:575px){
 .new-arrival,.info-welcome,.trand-sec,.subscribe-sec,.footer-main{
     padding-left: 15px !important;
