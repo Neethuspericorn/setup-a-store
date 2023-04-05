@@ -1,0 +1,599 @@
+.right-content-block-lg{
+    flex: 1 1 auto;
+    margin-left: 25px;
+    
+    .tilte__lg{
+        color: #222222;
+        font:normal  600 18px/27px Poppins;
+    }
+}
+
+
+
+.date-picker {
+    display: flex;
+    column-gap: 20px;
+    .date-input-cvr {
+        .date-input {
+            height: 48px;
+            background-color: transparent;
+            border: 1px solid #c4ddff;
+            border-radius: 8px;
+            padding: 8px 22px;
+            background-image: url(../img/noun-calendar.svg);
+            background-repeat: no-repeat;
+            background-position: 95% 50%;
+            font: 13px/20px Poppins;
+            position: relative;
+        }
+    }
+}
+
+
+.form-inner-cover {
+    border: 1px solid #E4E9EE;
+    border-radius: 6px;
+    padding: 50px 40px;
+    min-height: 350px;
+    // padding: 85px 73px 65px;
+    margin-bottom: 35px;
+  position: relative;
+ 
+    .profile-box {
+        display: flex;
+        position: relative;
+        transition: 0.4s;
+        margin-top: 35px;
+        padding-top: 25px;
+        .edit-btn {
+            background: #66829f21;
+            border-radius: 6px;
+            color: red;
+            font: 500 13px/18px Poppins;
+            border: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            right: 0;
+            top: -70px;
+            &:hover{
+            background: #66829f41;
+
+            }
+            .icon {
+                
+                flex-shrink: 0;
+            }
+        }
+    }
+
+    .profile-pick {
+        flex: 1 0 135px;
+        max-width: 135px;
+        margin-right: 60px;
+    }
+
+    .right-forms {
+
+       .form_grp{
+        margin-bottom: 40px;
+        position: relative;
+        label{
+            margin-bottom: 5px;
+            display: inline-block;
+            color: #000000;
+            font: normal 17px/26px Poppins;
+        }
+      }
+
+      .form-control {
+        border: 1px solid #E4E9EE;
+border-radius: 6px;
+height: 55px;
+padding: 18px 28px;
+color: #000;
+font: normal 17px/26px Poppins;
+&:focus{
+    box-shadow: 0 0 0 0.25rem rgb(229 200 178 / 25%);
+}
+      }
+    }
+
+}
+
+.btn__grp {
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: flex-end;
+    column-gap: 17px;
+    .btn-sm {
+        min-width: 120px;
+        height: 45px ;
+        border-radius: 6px ;
+        box-shadow: none ;
+        font: 500 13px/17px Poppins ;
+    }
+    .btn-primary {
+        background: #FF4E00 ;
+        border: 1px solid #FF4E00 ;
+        color: #fff ;
+        &:hover {
+            background-color: #222 ;
+            border-color: #222 ;
+        }
+    }
+    .btn-secondary {
+        background-color: #fff !important;
+        color: red !important;
+        border: 1px solid red !important;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+@mixin object-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$circleSize: 135px;
+$radius: 100px;
+$shadow: 0 0 10px 0 rgba(255, 255, 255, 0.35);
+$fontColor: rgb(250, 250, 250);
+
+.profile-pic {
+    color: transparent;
+    transition: all 0.3s ease;
+    @include object-center;
+    justify-content: flex-start;
+    transition: all 0.3s ease;
+    position: relative;
+    input {
+        display: none;
+    }
+
+    img {
+        position: absolute;
+        object-fit: cover;
+        width: $circleSize;
+        height: $circleSize;
+        border-radius: $radius;
+        border: 8px solid #E4E9EE;
+        z-index: 0;
+    }
+
+    .icon-camera {
+        // position: absolute;
+        img {
+            width: 30px;
+            height: 30px;
+            right: 13px;
+            bottom: 3px;
+            border: 0;
+        }
+    }
+
+    .label {
+        cursor: pointer;
+        height: $circleSize;
+        width: $circleSize;
+    }
+
+    .label {
+        @include object-center;
+        z-index: 9;
+        transition: background-color 0.2s ease-in-out;
+        border-radius: $radius;
+        margin-bottom: 0;
+        position: relative;
+    }
+
+    span {
+        // display: inline-flex;
+        // padding: .2em;
+        // height: 2em;
+    }
+}
+
+.profile-main {
+    .right-forms {
+        margin-top: 10px;
+    }
+    .profile-img {
+        img {
+            object-fit: cover;
+            border: 8px solid #E4E9EE;
+            width: $circleSize;
+            height: $circleSize;
+            border-radius: 100px;
+        }
+    }
+    .form-value {
+        display: flex;
+        margin-bottom: 55px;
+        .lnk{
+            color: #FF4E00;
+            text-decoration: underline;
+            margin-left: 25px;
+            font-weight: normal;
+        }
+        .disabled {
+            opacity: 0.6;
+        }
+        .icon-label {
+            flex-shrink: 0;
+            margin-right: 9px;
+        }
+        label {
+            color: #66829F;
+            margin-bottom: 5px;
+            font: 300 14px/21px Poppins;
+        }
+        .field {
+            color: #293341; 
+            font: 500 15px/20px Poppins;
+        }
+    }
+}
+
+// drag and drop
+
+.file-upload {
+    text-align: center;
+}
+
+.drag-drop-wrap label {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    position: absolute;
+    inset: 0;
+    bottom: -48px;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.file-upload input {
+    display: none;
+}
+
+
+.file-format{
+    color: #4676C7;
+    margin-top: 8px;
+    font: normal 12px/13px Poppins;
+    span{
+        margin-right: 3px;
+    }
+}
+
+.uploade-otr{
+    position: relative;
+}
+
+.file-details{
+    border: 1px solid #D3E3F8;
+    border-radius: 12px;
+    padding:10px 15px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    .otr{
+        display: flex;
+        align-items: center;
+        
+    }
+    .format-icon{
+     width: 22px;
+     margin-right: 18px;
+     img{
+        width: 100%;
+     }
+    }
+    .file_details{
+        font: 500 13px/17px Poppins;    
+       .file-name{
+        color: #35475E;
+        }
+        .size-info{
+color: #A2BCD6;
+font-weight: normal;
+        }
+    }
+
+    .close_btn{
+        margin-left: auto;
+        border: 0;
+        flex-shrink: 0;
+        background-color: transparent;
+        img{
+            width: 20px;
+        }
+    }
+}
+
+.image-uploader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    .user-icon{
+        width: 50px;
+    }
+    .icon-camera{
+position: absolute;
+right: 0;
+bottom: 0;
+        img{
+            width: 30px;
+         
+        }
+    }
+    .image-employee{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 100%;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.profile_pic{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: 8px solid #CCE6FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .file{
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+    }
+}
+
+ .floating-label label span{
+    color: #0075E9;
+ }
+
+ .modal .modal-dialog .modal-content .modal-header .btn-close{
+    margin-right: 1px;
+    margin-top: 1px;
+ }
+ .modal-full-width .modal-dialog .modal-content .modal-header .btn-close{
+    margin-right: 0px;
+    margin-top: 0px;
+ }
+
+  .profile-split{
+    flex-direction: column;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    .right-forms {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .profile-pick {
+        margin: 0 auto 35px;
+    }
+
+    .right-forms{
+     
+    }
+  }
+
+ 
+  .profile-row{
+
+  }
+
+
+@media (max-width: 1679px) {
+    .profile-pic .label {
+        width: 150px;
+    }
+    .date-picker .date-input-cvr .date-input {
+        height: 40px;
+    }
+    .floating-label label {
+        // top: 10px;
+    }
+    .date-picker .date-input-cvr .date-input {
+        // height: 40px;
+    }
+    .form-inner-cover {
+        padding: 40px 40px 55px;
+    }
+    .profile-main .form-value .field {
+        color: #35475e;
+        font: 500 14px/20px Poppins;
+    }
+    .profile-main .profile-img img,
+    .profile-pic img {
+        width: 115px;
+        height: 115px;
+        border-width: 6px;
+    }
+    .form-inner-cover .profile-pick {
+        // margin-right: 40px;
+    }
+    .form-inner-cover .profile-pick {
+        flex: 1 0 125px;
+        max-width: 125px;
+    }
+    .profile-pic .icon-camera img {
+        width: 25px;
+        height: 25px;
+        right: 19px;
+        bottom: 15px;
+       
+    }
+    .form-inner-cover .right-forms .form_grp label {
+        font: normal 14px/26px Poppins;
+    }
+    .form-inner-cover .right-forms .form-control{
+        height: 48px;
+        padding: 15px 20px;
+        font: normal 15px/26px Poppins;
+    }
+    .form-inner-cover .profile-box{
+        margin-top: 25px;
+        padding-top: 15px; 
+    }
+    .form-inner-cover .profile-box .edit-btn{
+        top: -50px;
+    }
+    .profile-split .profile-pick {
+        margin: 0px auto 20px;
+    }
+    .profile-main .form-value{
+        margin-bottom: 35px;
+    }
+}
+@media (max-width: 1199px) {
+    .profile-pic .label {
+        width: 111px;
+    }
+    .profile-pic .icon-camera img {
+        bottom: 19px;
+    }
+    .profile-split .right-forms {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .form-inner-cover {
+        padding: 55px 33px 55px;
+    }
+    .profile-pic .icon-camera img {
+        // right: 50px;
+    }
+    .form-inner-cover .profile-pick {
+        // margin-right: 0;
+    }
+    .form-inner-cover .profile-pick {
+        flex: 1 0 130px;
+        max-width: 130px;
+    }
+    .form-inner-cover .profile-box {
+        flex-wrap: wrap;
+    }
+    
+    
+}
+@media (max-width: 991px) {
+    .form-inner-cover .right-forms .form_grp{
+        margin-bottom: 20px;
+    }
+    .form-inner-cover .right-forms .form-control{
+        padding:10px 14px;
+    }
+    .profile-row{
+        flex-wrap: wrap;
+    }
+    .right-content-block-lg{
+        margin-left: 0;
+        margin-top: 25px;
+    }
+    .profile-split .right-forms{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .form-inner-cover .profile-pick {
+        // flex: 1 0 133px;
+        // max-width: 133px;
+    }
+
+    .form-inner-cover {
+        padding: 35px;
+    }
+   
+    .profile-main .form-value {
+        margin-bottom: 30px;
+    }
+    .profile-pic img,
+    .profile-main .profile-img img {
+        // width: 133px;
+        // height: 133px;
+    }
+    .profile-pic .icon-camera img {
+        right: 0px;
+        bottom: 25px;
+    }
+    .form-inner-cover .profile-box .edit-btn {
+        top: 0;
+    }
+}
+@media (max-width: 579px) {
+    .profile-main .form-value {
+        margin-bottom: 15px;
+    }
+    .form-inner-cover .profile-pick{
+        margin-bottom: 0;
+    }
+    .profile_pic {
+        width: 100px;
+        height: 100px;
+        border: 6px solid #CCE6FF;
+    }
+    .image-uploader .user-icon {
+        width: 40px;
+    }
+    .profile-pic .label {
+        height: 103px;
+    }
+    .profile-pic .icon-camera img {
+        right: 0;
+    }
+    .form-inner-cover .profile-pick {
+        max-width: 105px;
+    }
+    .profile-pic {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .profile-pic img,
+    .profile-main .profile-img img {
+        width: 103px;
+        height: 103px;
+        border: 5px solid #E4E9EE;
+    }
+    .btn__grp .btn-sm {
+        min-width: auto !important;
+        flex-grow: 1;
+    }
+    .form-inner-cover .profile-box .edit-btn{
+        // min-width: 84px;
+        // height: 38px;
+        top: 0;
+    }
+    .form-inner-cover {
+        padding: 20px;
+    }
+    .form-inner-cover .profile-pick{
+        flex: 1 0 103px;
+    }
+    .profile-pic .icon-camera img{
+        bottom: 15px;
+    }
+    .form-inner-cover .right-forms .form-control{
+        height: 40px;
+    }
+    .form-inner-cover .right-forms .form_grp label{
+        margin-bottom: 2px;
+    }
+}

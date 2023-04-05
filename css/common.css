@@ -155,6 +155,31 @@ li {
   }
 }
 
+.breadcrumb {
+  background-color: transparent;
+}
+.breadcrumb .breadcrumb-item {
+  font: normal 14px/22px Poppins;
+  letter-spacing: -0.77px;
+}
+.breadcrumb .breadcrumb-item.active {
+  color: #000000;
+  font-weight: 500;
+}
+.breadcrumb .breadcrumb-item .link {
+  color: #61595A;
+  text-decoration: none;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 2px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  padding-left: 3px;
+  padding-right: 5px;
+}
+
 .custom-dropdown .dropdown-menu {
   position: absolute;
   -webkit-transform: translate(-50%, 20px);

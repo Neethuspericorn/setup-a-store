@@ -28,28 +28,7 @@ $light-text-color: #61595A !default;
   }
 }
 
-.breadcrumb{
-    background-color: transparent;
-    .breadcrumb-item{
-font: normal 14px/22px $dmSans;
-letter-spacing: -0.77px;
-&.active{
- color: #000000;
- font-weight: 500;
-}
-.link{
-            color: #61595A;
-            text-decoration: none;
-        }
-    }
-}
-.breadcrumb-item+.breadcrumb-item {
-    padding-left: 2px;
-}
-.breadcrumb-item+.breadcrumb-item::before{
-    padding-left:3px;
-    padding-right:5px;
-}
+
 
 .page-info{
     margin-bottom:25px;
@@ -295,7 +274,7 @@ color: #949393;
 
 
 .product-wrap{
-    padding-top: 100px;
+    padding-top:50px;
    
     .right-area {
         flex-grow: 1;
@@ -308,7 +287,7 @@ color: #949393;
        padding-top: 25px;
        display: grid;
        grid-template-columns: repeat(5, 1fr);
-       -ms-grid-columns: 1fr [5];
+    //    -ms-grid-columns: 1fr [5];
        column-gap: 20px;
        row-gap: 30px;
         .product-bx{
@@ -985,15 +964,7 @@ color: #949393;
         font: 600 15px/33px Poppins;
     }
 
-    .product-wrap {
-        padding-top: 80px;
-    }
-    .breadcrumb{
-        margin-bottom: 10px;
-    }
-    .breadcrumb .breadcrumb-item{
-        font: normal 13px/17px "DM Sans", sans-serif;
-    }
+ 
     .page-info .info {
         font: normal 13px/17px "DM Sans", sans-serif;
     }
@@ -1070,7 +1041,7 @@ color: #949393;
     }
 .product-wrap .product-area{
     grid-template-columns: repeat(4, 1fr);
-    -ms-grid-columns: (1fr)[4];
+    // -ms-grid-columns: (1fr)[4];
 }
 .product-wrap .product-area .product-bx .add-cart-btn{
     display: block;
@@ -1108,7 +1079,7 @@ color: #949393;
 }
 .product-wrap .product-area {
     grid-template-columns: repeat(2, 1fr);
-    -ms-grid-columns: 1fr [2];
+    // -ms-grid-columns: 1fr [2];
 }
 }
 
@@ -1207,7 +1178,7 @@ color: #949393;
     }
 .product-wrap .product-area {
     grid-template-columns: repeat(1, 1fr);
-    -ms-grid-columns: 1fr [1];
+    // -ms-grid-columns: 1fr [1];
 }
 }
 
@@ -1250,7 +1221,7 @@ color: #949393;
 @media(max-width:479px){
     .product-wrap .product-area {
         grid-template-columns: repeat(1, 1fr);
-        -ms-grid-columns: 1fr [1];
+        // -ms-grid-columns: 1fr [1];
     }
     .border-line{
         flex-wrap: wrap;
