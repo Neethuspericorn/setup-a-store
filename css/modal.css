@@ -146,7 +146,7 @@
   margin-bottom: 5px;
 }
 .authentication-modal .modal-dialog .modal-body .form-block .form-control {
-  height: 60px;
+  height: 55px;
   background: #F8F8F8;
   border-radius: 6px;
   border: none;
@@ -344,6 +344,54 @@
 .authentication-modal .link_sm:hover {
   color: #222;
 }
+.authentication-modal.sign-up-modal .row > * {
+  padding: 0 7.5px;
+}
+.authentication-modal.sign-up-modal .form-block {
+  margin-bottom: 20px !important;
+}
+.authentication-modal.sign-up-modal .btn-primary {
+  margin-top: 20px !important;
+}
+.authentication-modal.sign-up-modal .profile-uplode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+.authentication-modal.sign-up-modal .profile-uplode .profile-pick {
+  position: relative;
+}
+.authentication-modal.sign-up-modal .profile-uplode .user-icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 45px;
+  left: 50%;
+  z-index: 0;
+}
+.authentication-modal.sign-up-modal .profile-uplode .img-round {
+  position: absolute;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 135px;
+  height: 135px;
+  border-radius: 100px;
+  border: 8px solid #E4E9EE;
+  z-index: 1;
+}
+.authentication-modal.sign-up-modal .profile-uplode .img-round img {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0 !important;
+}
 
 .otp-field-outer {
   display: -webkit-box;
@@ -375,6 +423,22 @@
 }
 
 @media (max-width: 1679px) {
+  .authentication-modal.sign-up-modal .profile-uplode .img-round {
+    width: 105px;
+    height: 105px;
+    border-radius: 100px;
+    border: 5px solid #E4E9EE;
+  }
+  .authentication-modal.sign-up-modal .profile-uplode .profile-pic .label {
+    width: 105px;
+    height: 105px;
+  }
+  .authentication-modal.sign-up-modal .profile-uplode .profile-pic .icon-camera img {
+    width: 25px;
+    height: 25px;
+    right: 6px;
+    bottom: 7px;
+  }
   .authentication-modal .modal-dialog {
     max-width: 495px;
   }
@@ -386,6 +450,11 @@
   }
   .authentication-modal .otp-info p, .authentication-modal .otp-ftr {
     font: 14px/23px Poppins;
+  }
+}
+@media (max-width: 767px) {
+  .authentication-modal.sign-up-modal .profile-uplode {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 479px) {

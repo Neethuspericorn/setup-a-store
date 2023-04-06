@@ -9,27 +9,6 @@
   font: normal 600 18px/27px Poppins;
 }
 
-.date-picker {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
-}
-.date-picker .date-input-cvr .date-input {
-  height: 48px;
-  background-color: transparent;
-  border: 1px solid #c4ddff;
-  border-radius: 8px;
-  padding: 8px 22px;
-  background-image: url(../img/noun-calendar.svg);
-  background-repeat: no-repeat;
-  background-position: 95% 50%;
-  font: 13px/20px Poppins;
-  position: relative;
-}
-
 .form-inner-cover {
   border: 1px solid #E4E9EE;
   border-radius: 6px;
@@ -421,9 +400,6 @@
   margin: 0 auto 35px;
 }
 @media (max-width: 1679px) {
-  .profile-pic .label {
-    width: 150px;
-  }
   .date-picker .date-input-cvr .date-input {
     height: 40px;
   }
