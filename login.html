@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/slick-theme.min.css">
 
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/modal.css">
 </head>
 
@@ -32,6 +33,102 @@
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Otp">
         OTP Modal
     </button>
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signup">
+        Signup
+    </button>
+
+ <div class="modal fade authentication-modal sign-up-modal" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel">
+                        <img src="img/modal-logo.svg" class="modal-logo" alt="modal-logo">
+                        <span>Empire</span>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="title-txt">
+                        <h4>Signup</h4>
+                    </div>
+
+   <div class="profile-uplode">
+    <div class="profile-pick">
+        <div class="profile-pic">
+           <label class="label" for="file">
+              <span class="icon-camera"><img src="img/camera.svg" alt=""></span>
+              <!-- <span>Change Image</span> -->
+           </label>
+           <input id="file" type="file" onchange="loadFile(event)"/>
+           <div class="img-round">
+               <img src="img/Ellipse.png" id="output" />
+           </div>
+        </div>
+
+        <img class="user-icon" src="img/user-light.svg" id="output" />
+
+
+     </div>
+   </div>
+ 
+
+                    <div class="row">
+                       <div class="col-lg-6">
+                           <div class="form-block">
+                               <label class="form-label">First Name *</label>
+                               <input type="email" class="form-control" placeholder=" ">
+                           </div>
+                       </div>
+
+                       <div class="col-lg-6">
+                        <div class="form-block">
+                            <label class="form-label">Last Name *</label>
+                            <input type="email" class="form-control" placeholder=" ">
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-block">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder=" ">
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-block">
+                            <label class="form-label">Phone Number</label>
+                            <input type="email" class="form-control" placeholder=" ">
+                        </div>
+                    </div>
+
+                      <div class="col-12">
+                        <div class="form-block">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" placeholder=" ">
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-block">
+                            <label class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" placeholder=" ">
+                        </div>
+                    </div>
+
+                    </div>
+                 
+
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                   
+                    <div class="privacy-txt">By continuing, I agree to the <span>Terms Of Use & Privacy Policy</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <div class="modal fade authentication-modal " id="Otp" tabindex="-1" 
     data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
