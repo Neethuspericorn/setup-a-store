@@ -33,8 +33,8 @@
         OTP Modal
     </button>
 
-    <div class="modal fade authentication-modal " id="Otp" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+    <div class="modal fade authentication-modal " id="Otp" tabindex="-1" 
+    data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
@@ -76,32 +76,7 @@
     </div>
 </div>
 
-<script>
-var otpFields = document.querySelectorAll('.otp-field-outer input[type="text"]');
 
-for (var i = 0; i < otpFields.length; i++) {
-  otpFields[i].addEventListener('input', function() {
-    // var otp = this.value.replace(/\D/g, '');
-    if (otp.length > 0) {
-      var next = this.nextElementSibling;
-      if (next && next.tagName.toLowerCase() == 'input') {
-        next.value = otp[0];
-        next.focus();
-      }
-    }
-  });
-}
-
-document.addEventListener('paste', function(event) {
-  var otp = event.clipboardData.getData('text/plain').replace(/\D/g, '');
-  if (otp.length == 6) {
-    for (var i = 0; i < otpFields.length; i++) {
-      otpFields[i].value = otp[i];
-    }
-  }
-});
-
-</script>
     <div class="modal fade authentication-modal" id="login-or-signup-modal" tabindex="-1"
         aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -202,7 +177,7 @@ document.addEventListener('paste', function(event) {
             </div>
         </div>
     </div>
-    <div class="modal fade authentication-modal" id="reset" tabindex="-1" aria-labelledby="exampleModalLabel"
+    <div class="modal fade authentication-modal" id="reset" tabindex="-1" aria-labelledby="exampleModalLabel" 
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -241,11 +216,43 @@ document.addEventListener('paste', function(event) {
             </div>
         </div>
     </div>
+
+
+ <!-- OTP fill  -->
+    <script>
+        var otpFields = document.querySelectorAll('.otp-field-outer input[type="text"]');
+        
+        for (var i = 0; i < otpFields.length; i++) {
+          otpFields[i].addEventListener('input', function() {
+            // var otp = this.value.replace(/\D/g, '');
+            if (otp.length > 0) {
+              var next = this.nextElementSibling;
+              if (next && next.tagName.toLowerCase() == 'input') {
+                next.value = otp[0];
+                next.focus();
+              }
+            }
+          });
+        }
+        
+        document.addEventListener('paste', function(event) {
+          var otp = event.clipboardData.getData('text/plain').replace(/\D/g, '');
+          if (otp.length == 6) {
+            for (var i = 0; i < otpFields.length; i++) {
+              otpFields[i].value = otp[i];
+            }
+          }
+        });
+        
+        </script>
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="js/custom.js"></script>
+
+    
 </body>
 
 </html>
