@@ -22,6 +22,12 @@
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login">
         Login
     </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#forgot">
+        Forgot Password?
+    </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reset">
+        Reset Password?
+    </button>
     <div class="modal fade authentication-modal" id="login-or-signup-modal" tabindex="-1"
         aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -83,16 +89,84 @@
                             </label>
                         </div>
                         <a href="" class="forgot-txt">Forgot Password?</a>
-                        
+
                     </div>
-                    <div class="privacy-txt">By continuing, I agree to the <span>Terms Of Use & Privacy Policy</span></div>
+                    <div class="privacy-txt">By continuing, I agree to the <span>Terms Of Use & Privacy Policy</span>
+                    </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
+    <div class="modal fade authentication-modal" id="forgot" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel">
+                        <img src="img/modal-logo.svg" class="modal-logo" alt="modal-logo">
+                        <span>Empire</span>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="title-txt">
+                        <h4>Forgot Password?</h4>
+                        <p class="dec-txt">Enter your email address and we'll send you a link to reset your password</p>
+                    </div>
+                    <div class="form-block">
+                        <label class="form-label">Email address</label>
+                        <input type="email" class="form-control" placeholder="ethan.mendez@mail.com">
+                    </div>
 
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-back"><img src="img/arrow-back.svg" alt=""> Back to
+                        Login</button>
 
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade authentication-modal" id="reset" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel">
+                        <img src="img/modal-logo.svg" class="modal-logo" alt="modal-logo">
+                        <span>Empire</span>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="title-txt">
+                        <h4>Login</h4>
+                    </div>
+                    <div class="form-block">
+                        <label class="form-label">New Password*</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="************************">
+                            <span class="input-group-text" id="basic-addon2"><img src="img/pass-view.svg" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="form-block">
+                        <label class="form-label">Confirm New Password*</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="************************">
+                            <span class="input-group-text" id="basic-addon2"><img src="img/pass-view.svg" alt=""></span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-back">
+                        <img src="img/arrow-back.svg" alt="">
+                        Back to Login
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
