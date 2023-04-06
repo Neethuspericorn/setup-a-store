@@ -323,7 +323,7 @@ color: #949393;
             .add-cart-btn{
                 background: #EB3E32;
                 border-radius: 19px;
-                font: normal normal normal 14px/22px DM Sans;
+                font: normal normal normal 14px/22px Poppins;
                 color: #fff;
                 width: 100%;
                 border: 0;
@@ -474,7 +474,7 @@ color: #949393;
                          color: #222222;
                          width: 25px;
                          flex-grow: 1;
-                        //  font: normal 16px/23px DM Sans;
+                        //  font: normal 16px/23px Poppins;
                         }
                         .cvr{
                             color: #424242;
@@ -488,7 +488,7 @@ color: #949393;
                             //  border-right: 1px solid #E1E1E1;
                              flex-grow: 1;
                              background-color: transparent;
-                            //  font:bold 18px/23px DM Sans;
+                            //  font:bold 18px/23px Poppins;
                     
                              &:hover{
                                 // background-color: #ddd;
@@ -561,133 +561,7 @@ color: #949393;
 
 // check box and Radio button 
 
-/* The container */
-.custom_inputs {
-    display: inline-flex;
-    align-items: center;
-    position: relative;
-    padding-left: 20px;
-    margin-bottom: 12px;
-    color: #293341;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    font:  14px/22px $dmSans;
-    letter-spacing: -0.77px;
 
-  
-  /* Hide the browser's default checkbox */
-  &.custom_check {
-
-    input{
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 0;
-        width: 0;
-    }
-
-
-
-    .checkmark {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 16px;
-        width: 16px;
-        border: 1px solid #DBDEEA;
-        border-radius: 3px;
-        transform: translate(-50%, -50%);
-        background-color: #fff;
-        top: 50%;
-      }
-    //   &:hover input ~ .checkmark {
-    //     background-color: #ccc;
-    //   }
-      input:checked ~ .checkmark {
-        background: #66829F;
-        border: 0;
-      }
-      .checkmark:after {
-        content: "";
-        position: absolute;
-        display: none;
-      }
-      input:checked ~ .checkmark:after {
-        display: block;
-        
-      }
-       .checkmark:after {
-        left: 6px;
-        top: 2px;
-        width: 5px;
-        height: 9px;
-        border: solid white;
-        border-width: 0 2px 2px 0;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
-        
-      }
-  }
-  
-  
-  &.custom_radio {
-    .checkmark {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 17px;
-        height: 16px;
-        border: 1px solid #C4C3CA;
-        border-radius: 50%;
-    }
-    .checkmark:after {
-        content: "";
-        position: absolute;
-        display: none;
-      }
-      .checkmark:after {
-       top:51%;
-       left: 50%;
-       width: 6px;
-       height: 6px;
-       border-radius: 50%;
-       transform: translate(-50%, -50%);
-       background: #66829F;
-   }
-     /* On mouse-over, add a grey background color */
-
-  /* When the radio button is checked, add a blue background */
-  input:checked ~ .checkmark {
-    // background-color: #2196F3;
-    border: 1px solid #66829F;
-
-  }
-  
-  /* Create the indicator (the dot/circle - hidden when not checked) */
- 
-  
-  /* Show the indicator (dot/circle) when checked */
-   input:checked ~ .checkmark:after {
-    display: block;
-  }
-  input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-  }
-  .checkmark{
-    transform: translate(-50%, -50%);
-    top: 50%;
-}
-  }
-
-
-
-  }
 
 
 
@@ -716,7 +590,7 @@ color: #949393;
     margin-left: 30px;
 
     .show-txt{
-        font: normal normal normal 16px/22px DM Sans;
+        font: normal normal normal 16px/22px Poppins;
         letter-spacing: -1.1px;
         color: #61595A;
     }
@@ -736,7 +610,7 @@ color: #949393;
                 justify-content: center;
                 color: #000;
                 border: 0;
-                font: normal normal normal 15px/22px DM Sans;
+                font: normal normal normal 15px/22px Poppins;
                 letter-spacing: -0.99px;
                 &:hover, &:active, &:focus{
                     background-color: transparent;
@@ -1055,10 +929,7 @@ color: #949393;
     padding-left: 15px;
     padding-top: 15px;
 }
-.drop-sort{
-    position: static;
-    margin-top: 10px;
-}
+
 }
 @media(max-width:767px){
     .product-wrap .product-area .product-bx .product-item-otr .favorite-item{

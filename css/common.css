@@ -29,6 +29,29 @@ a {
   cursor: pointer;
 }
 
+/* scrollbar  */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background: #ececec;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b5b6b8;
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e2e2e2;
+}
+
 ul,
 li {
   padding: 0;
@@ -414,6 +437,116 @@ li {
   padding: 3px;
   top: 13px;
   right: 16px;
+}
+
+/* The container */
+.custom_inputs {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  color: #293341;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font: 14px/22px Poppins;
+  letter-spacing: -0.77px;
+  /* Hide the browser's default checkbox */
+}
+.custom_inputs.custom_check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.custom_inputs.custom_check .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #DBDEEA;
+  border-radius: 3px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  top: 50%;
+}
+.custom_inputs.custom_check input:checked ~ .checkmark {
+  background: #66829F;
+  border: 0;
+}
+.custom_inputs.custom_check .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.custom_inputs.custom_check input:checked ~ .checkmark:after {
+  display: block;
+}
+.custom_inputs.custom_check .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.custom_inputs.custom_radio {
+  /* On mouse-over, add a grey background color */
+  /* When the radio button is checked, add a blue background */
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  /* Show the indicator (dot/circle) when checked */
+}
+.custom_inputs.custom_radio .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 16px;
+  border: 1px solid #C4C3CA;
+  border-radius: 50%;
+}
+.custom_inputs.custom_radio .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.custom_inputs.custom_radio .checkmark:after {
+  top: 51%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #66829F;
+}
+.custom_inputs.custom_radio input:checked ~ .checkmark {
+  border: 1px solid #66829F;
+}
+.custom_inputs.custom_radio input:checked ~ .checkmark:after {
+  display: block;
+}
+.custom_inputs.custom_radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.custom_inputs.custom_radio .checkmark {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
 }
 
 @media (max-width: 1679px) {

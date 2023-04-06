@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empire</title>
+    <title>Empire - Orders</title>
 
     <link rel="stylesheet" href="css/bootstrap.css">
 
@@ -132,15 +132,15 @@
     <main>
         <section class="orders-sec">
             <div class="container">
-                <div class="prof-breadcrumb">
-                    <ul>
-                        <li><a class="brd-link" href="#">Home</a></li>
-                        <li><a class="brd-link" href="#">My Profile</a></li>
-                        <li>My Orders</li>
-                    </ul>
-                </div>
-                <div class="page-title d-flex">
-                    <span class="usr-img"><img src="img/diamond.svg" alt=""></span> John
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                       <li class="breadcrumb-item"><a class="link" href="#">Home</a></li>
+                       <li class="breadcrumb-item"><a class="link" href="#">My Profile</a></li>
+                       <li class="breadcrumb-item active" aria-current="page">My Orders</li>
+                    </ol>
+                 </nav>
+                 <div class="page-title d-flex">
+                    <span class="usr-img"><img src="img/profile-pick.png" alt=""></span> Elizabeth Elliot
                 </div>
                 <div class="order-row d-flex">
                     <div class="order-sidenav">
@@ -185,16 +185,91 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="filter-box">
-                                    <div class="custom-filter" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Filter
+                                
+                                <div class="filter-box dropdown">
+                                    <div class="custom-filter dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                     <img src="img/filter-icon.svg" alt="">  <span> Filter</span>
                                     </div>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" onclick="event.stopPropagation()">
+                                        <div class="filter-hd">Filter by</div>
+                                        <ul class="filter-list">
+                                            <li><strong>Order Status</strong></li>
+                                            <li>
+                                               <label class="custom_inputs custom_check">All
+                                               <input type="checkbox">
+                                               <span class="checkmark"></span>
+                                               </label>
+                                            </li>
+                                            <li>
+                                               <label class="custom_inputs custom_check">On the way
+                                               <input type="checkbox">
+                                               <span class="checkmark"></span>
+                                               </label>
+                                            </li>
+                                            <li>
+                                               <label class="custom_inputs custom_check">Delivered
+                                               <input type="checkbox">
+                                               <span class="checkmark"></span>
+                                               </label>
+                                            </li>
+                                            <li>
+                                               <label class="custom_inputs custom_check">Cancelled
+                                               <input type="checkbox">
+                                               <span class="checkmark"></span>
+                                               </label>
+                                            </li>
+                                            <li>
+                                               <label class="custom_inputs custom_check">Returned
+                                               <input type="checkbox">
+                                               <span class="checkmark"></span>
+                                               </label>
+                                            </li>
+
+                                            <li><strong>Order Date</strong></li>
+                                         
+
+                                            <li>
+                                                <label class="custom_inputs custom_check">Any time
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                </label>
+                                             </li>
+
+                                             <li>
+                                                <label class="custom_inputs custom_check">Last 30 days
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                </label>
+                                             </li>
+
+                                             <li>
+                                                <label class="custom_inputs custom_check">Last 6 months
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                </label>
+                                             </li>
+                                             <li>
+                                                <label class="custom_inputs custom_check">2022
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                </label>
+                                             </li>
+                                             <li>
+                                                <label class="custom_inputs custom_check">2021
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                </label>
+                                             </li>
+                                             <li>
+                                                <label class="custom_inputs custom_check">Older
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                </label>
+                                             </li>
+
+ 
+           
+                                         </ul>
                                       </ul>
                                 </div>
                             </div>
@@ -343,6 +418,9 @@
         <!--Footer End-->
 
     </footer>
+
+
+    
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

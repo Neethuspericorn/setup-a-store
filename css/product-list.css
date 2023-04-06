@@ -303,7 +303,7 @@
 .product-wrap .product-area .product-bx .add-cart-btn {
   background: #EB3E32;
   border-radius: 19px;
-  font: normal normal normal 14px/22px DM Sans;
+  font: normal normal normal 14px/22px Poppins;
   color: #fff;
   width: 100%;
   border: 0;
@@ -562,116 +562,6 @@
   font: normal 12px/17px Poppins;
 }
 
-/* The container */
-.custom_inputs {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  padding-left: 20px;
-  margin-bottom: 12px;
-  color: #293341;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font: 14px/22px "DM Sans", sans-serif;
-  letter-spacing: -0.77px;
-  /* Hide the browser's default checkbox */
-}
-.custom_inputs.custom_check input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-.custom_inputs.custom_check .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 16px;
-  width: 16px;
-  border: 1px solid #DBDEEA;
-  border-radius: 3px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-color: #fff;
-  top: 50%;
-}
-.custom_inputs.custom_check input:checked ~ .checkmark {
-  background: #66829F;
-  border: 0;
-}
-.custom_inputs.custom_check .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-.custom_inputs.custom_check input:checked ~ .checkmark:after {
-  display: block;
-}
-.custom_inputs.custom_check .checkmark:after {
-  left: 6px;
-  top: 2px;
-  width: 5px;
-  height: 9px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.custom_inputs.custom_radio {
-  /* On mouse-over, add a grey background color */
-  /* When the radio button is checked, add a blue background */
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  /* Show the indicator (dot/circle) when checked */
-}
-.custom_inputs.custom_radio .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 17px;
-  height: 16px;
-  border: 1px solid #C4C3CA;
-  border-radius: 50%;
-}
-.custom_inputs.custom_radio .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-.custom_inputs.custom_radio .checkmark:after {
-  top: 51%;
-  left: 50%;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background: #66829F;
-}
-.custom_inputs.custom_radio input:checked ~ .checkmark {
-  border: 1px solid #66829F;
-}
-.custom_inputs.custom_radio input:checked ~ .checkmark:after {
-  display: block;
-}
-.custom_inputs.custom_radio input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-.custom_inputs.custom_radio .checkmark {
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  top: 50%;
-}
-
 .price-range-slider {
   margin-bottom: 20px;
   padding-top: 10px;
@@ -696,7 +586,7 @@
   margin-left: 30px;
 }
 .pagenationWrp .show-txt {
-  font: normal normal normal 16px/22px DM Sans;
+  font: normal normal normal 16px/22px Poppins;
   letter-spacing: -1.1px;
   color: #61595A;
 }
@@ -726,7 +616,7 @@
           justify-content: center;
   color: #000;
   border: 0;
-  font: normal normal normal 15px/22px DM Sans;
+  font: normal normal normal 15px/22px Poppins;
   letter-spacing: -0.99px;
 }
 .pagenationWrp .pagenationItems .pagination .page-link:hover, .pagenationWrp .pagenationItems .pagination .page-link:active, .pagenationWrp .pagenationItems .pagination .page-link:focus {
@@ -1038,10 +928,6 @@
   .product-wrap .product-area {
     padding-left: 15px;
     padding-top: 15px;
-  }
-  .drop-sort {
-    position: static;
-    margin-top: 10px;
   }
 }
 @media (max-width: 767px) {
