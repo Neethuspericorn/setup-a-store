@@ -192,6 +192,7 @@ border-radius: 13px;
                 padding-left: 25px;
                 padding-right: 25px;
                 position: relative;
+                color: #39434F;
              
                 &:hover,&:active,&:focus{
                     background-color: rgb(255 92 20 / 8%);
@@ -274,6 +275,87 @@ border-radius: 13px;
 
 }
 
+// sort by 
+
+.drop-sort{
+    position: absolute;
+    right: 0;
+    top: 0;
+
+
+    .sort-select {
+        display: flex;
+        align-items: center;
+        border: 1px solid #E4E9EE;
+        border-radius: 6px;
+        padding-left: 60px;
+        min-width: 300px;
+        height: 38px;
+        .sort {
+            position: absolute;
+            left: 10px;
+            font:13px/18px Poppins;
+            color: #61595A;
+        }
+        .form_controler {
+            border: 0;
+        }
+        .btn {
+            border: 0;
+            box-shadow: none;
+            text-align: left;
+            width: 100%;
+            font:13px/18px Poppins;
+
+            &:after {
+                display: none;
+            }
+        }
+        .dropdown-menu {
+            width: 100%;
+            transform: translate(0px, 38px) !important; 
+            box-shadow: 0px 11px 9px #0000001A;
+border: 1px solid #DEE3E8;
+border-radius: 6px;
+li:first-child .dropdown-item{
+    border-radius: 6px 6px 0 0;
+}
+li:last-child .dropdown-item{
+    border-radius: 0px 0px 6px 6px;
+}
+
+        }
+
+        .dropdown-menu:before{
+            display: none;
+        }
+
+        .dropdown-item {
+            font: 13px/18px Poppins;
+            color: #6c83a2;
+            &:hover,
+            &:active {
+                background-color: #e5f0ff;
+            }
+        }
+    }
+    .select-custom:after {
+        content: "";
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        position: absolute;
+        right: 0;
+        top: 50%;
+        right: 8px;
+        border: solid black;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 3px;
+        top: 13px;
+       right: 16px;
+    }
+}
+
 
 @media(max-width:1679px){
 
@@ -302,6 +384,14 @@ border-radius: 13px;
         width: 15px;
     }
 }
+}
+
+@media(max-width:992px){
+
+.drop-sort{
+    position: static;
+    margin-top: 10px;
+ }
 }
 
 @media(max-width:767px){

@@ -252,6 +252,7 @@ li {
   padding-left: 25px;
   padding-right: 25px;
   position: relative;
+  color: #39434F;
 }
 .custom-dropdown .dropdown-menu li .dropdown-item:hover, .custom-dropdown .dropdown-menu li .dropdown-item:active, .custom-dropdown .dropdown-menu li .dropdown-item:focus {
   background-color: rgba(255, 92, 20, 0.08);
@@ -336,6 +337,85 @@ li {
   margin-bottom: 20px;
 }
 
+.drop-sort {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.drop-sort .sort-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #E4E9EE;
+  border-radius: 6px;
+  padding-left: 60px;
+  min-width: 300px;
+  height: 38px;
+}
+.drop-sort .sort-select .sort {
+  position: absolute;
+  left: 10px;
+  font: 13px/18px Poppins;
+  color: #61595A;
+}
+.drop-sort .sort-select .form_controler {
+  border: 0;
+}
+.drop-sort .sort-select .btn {
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-align: left;
+  width: 100%;
+  font: 13px/18px Poppins;
+}
+.drop-sort .sort-select .btn:after {
+  display: none;
+}
+.drop-sort .sort-select .dropdown-menu {
+  width: 100%;
+  -webkit-transform: translate(0px, 38px) !important;
+          transform: translate(0px, 38px) !important;
+  -webkit-box-shadow: 0px 11px 9px rgba(0, 0, 0, 0.1019607843);
+          box-shadow: 0px 11px 9px rgba(0, 0, 0, 0.1019607843);
+  border: 1px solid #DEE3E8;
+  border-radius: 6px;
+}
+.drop-sort .sort-select .dropdown-menu li:first-child .dropdown-item {
+  border-radius: 6px 6px 0 0;
+}
+.drop-sort .sort-select .dropdown-menu li:last-child .dropdown-item {
+  border-radius: 0px 0px 6px 6px;
+}
+.drop-sort .sort-select .dropdown-menu:before {
+  display: none;
+}
+.drop-sort .sort-select .dropdown-item {
+  font: 13px/18px Poppins;
+  color: #6c83a2;
+}
+.drop-sort .sort-select .dropdown-item:hover, .drop-sort .sort-select .dropdown-item:active {
+  background-color: #e5f0ff;
+}
+.drop-sort .select-custom:after {
+  content: "";
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  right: 8px;
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  top: 13px;
+  right: 16px;
+}
+
 @media (max-width: 1679px) {
   .product-wrap {
     padding-top: 80px;
@@ -361,6 +441,12 @@ li {
   }
   .custom-dropdown .dropdown-menu li .dropdown-item .icon img {
     width: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .drop-sort {
+    position: static;
+    margin-top: 10px;
   }
 }
 @media (max-width: 767px) {
