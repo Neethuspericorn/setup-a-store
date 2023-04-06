@@ -272,6 +272,82 @@
             }
         }
     }
+
+    .otp-info{
+        text-align: center;
+        p   {
+            font: 500 16px/26px Poppins;
+            color: #293341;
+        }
+        a{
+            color: #FF4E00;
+            padding-left: 15px;
+            &:hover{
+                color: #222;
+            }
+        }
+    }
+
+    .otp-ftr{
+        text-align: center;
+        font: normal normal normal 16px/30px Poppins;
+
+        a{
+            color: #FF4E00;
+        }
+       
+        p{
+
+color: #949393;
+
+        }
+
+        .bk-login{
+            &:hover{
+                
+                img{
+                    right: 13px;
+                    transition: 0.2s ease all;
+                }
+            }
+            img{
+                position: relative;
+              right: 8px;
+                transition: 0.2s ease all;
+            }
+        }
+    }
+
+    .link_sm{
+        color: #FF4E00;
+        border: 0;
+        background-color: transparent;
+        padding: 0;
+        &:hover{
+            color: #222;
+        }
+    }
+}
+
+.otp-field-outer{
+    display: flex;
+    margin-bottom: 45px;
+    column-gap: 15px;
+    justify-content: center;
+    .otp-field{
+        font: 16px/23px Poppins;
+        font-weight: 600;
+        width: 53px;
+        height: 63px;
+        border: 1px solid #DAE1E8;
+border-radius: 6px;
+background: #F8F8F8B0;
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+outline: 0;
+    }
 }
 
 .login-modal {

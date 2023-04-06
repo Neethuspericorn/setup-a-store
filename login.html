@@ -28,6 +28,80 @@
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reset">
         Reset Password?
     </button>
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Otp">
+        OTP Modal
+    </button>
+
+    <div class="modal fade authentication-modal " id="Otp" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title" id="exampleModalLabel">
+                    <img src="img/modal-logo.svg" class="modal-logo" alt="modal-logo">
+                    <span>Empire</span>
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="title-txt">
+                    <div class="otp-info">
+                       <p> Please enter the 6 digit OTP that we sent on ethan.mendez@mail.com <a href="">Change</a></p>
+                    </div>
+                </div>
+               
+                
+                <div class="otp-field-outer">
+                    <input class="otp-field" type="text" id="otp-field-1" name="otp-field-1" maxlength="1">
+                    <input class="otp-field" type="text" id="otp-field-2" name="otp-field-2" maxlength="1">
+                    <input class="otp-field" type="text" id="otp-field-3" name="otp-field-3" maxlength="1">
+                    <input class="otp-field" type="text" id="otp-field-4" name="otp-field-4" maxlength="1">
+                    <input class="otp-field" type="text" id="otp-field-5" name="otp-field-5" maxlength="1">
+                    <input class="otp-field" type="text" id="otp-field-6" name="otp-field-6" maxlength="1">
+                  </div>
+              
+                <button type="button" class="btn btn-primary">Verify</button>
+        
+                <div class="otp-ftr">
+                    <p>Not received your code? <span> <button class="link_sm">Resend Code</button></span></p>
+
+                    <div class="bk-login">
+                        <a href=""> <img src="img/arrow-back.svg" alt=""> Back to Login</a>
+                       </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+var otpFields = document.querySelectorAll('.otp-field-outer input[type="text"]');
+
+for (var i = 0; i < otpFields.length; i++) {
+  otpFields[i].addEventListener('input', function() {
+    // var otp = this.value.replace(/\D/g, '');
+    if (otp.length > 0) {
+      var next = this.nextElementSibling;
+      if (next && next.tagName.toLowerCase() == 'input') {
+        next.value = otp[0];
+        next.focus();
+      }
+    }
+  });
+}
+
+document.addEventListener('paste', function(event) {
+  var otp = event.clipboardData.getData('text/plain').replace(/\D/g, '');
+  if (otp.length == 6) {
+    for (var i = 0; i < otpFields.length; i++) {
+      otpFields[i].value = otp[i];
+    }
+  }
+});
+
+</script>
     <div class="modal fade authentication-modal" id="login-or-signup-modal" tabindex="-1"
         aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
