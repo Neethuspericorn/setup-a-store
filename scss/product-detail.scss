@@ -819,6 +819,9 @@ $product-second: #A4AEB8  !default;
                     margin: 0px;
                     padding: 0px;
                     height: 100%;
+                    &.open {
+                        opacity: 1;
+                    }
                     .slider-nav{
                         .sliders{
                             img{

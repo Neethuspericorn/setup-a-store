@@ -59,18 +59,19 @@ $(document).ready(function(){
     var slideno = $(this).data('slide');
     $('.slider-nav').slick('slickGoTo', slideno - 1);
   });
-
-  const myModalEl = document.getElementById('myModal')
-  myModalEl.addEventListener('show.bs.modal', event => {
-     
-  })
-
-  myModalEl.addEventListener('shown.bs.modal', event => {
-     
-    $('.slider-for').slick('reinit');
-  
-    $('.slider-nav').slick('reinit');
-  })
-
-
 });
+
+
+
+$(document).ready(function(){
+  $('.slider-for').slick();
+  $('.slider-nav').slick();
+});
+
+$('.modal').on('shown.bs.modal', function (e) {
+  $('.slider-for').slick('setPosition');
+  $('.slider-nav').slick('setPosition');
+  $('.slider-area').addClass('open');
+})
+
+
