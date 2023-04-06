@@ -8,28 +8,6 @@
     }
 }
 
-
-
-.date-picker {
-    display: flex;
-    column-gap: 20px;
-    .date-input-cvr {
-        .date-input {
-            height: 48px;
-            background-color: transparent;
-            border: 1px solid #c4ddff;
-            border-radius: 8px;
-            padding: 8px 22px;
-            background-image: url(../img/noun-calendar.svg);
-            background-repeat: no-repeat;
-            background-position: 95% 50%;
-            font: 13px/20px Poppins;
-            position: relative;
-        }
-    }
-}
-
-
 .form-inner-cover {
     border: 1px solid #E4E9EE;
     border-radius: 6px;
