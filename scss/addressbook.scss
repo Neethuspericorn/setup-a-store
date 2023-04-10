@@ -1,3 +1,48 @@
+
+.sec-sub-title{
+    &.addressTitle{
+        align-items: center;
+        @media screen and (max-width: 991px){
+            padding-top: 20px;
+        }
+    }
+}
+.sec-block-right{
+    &.addBlock{
+        margin-top: 0 !important;
+    }
+}
+.btn-addNewAddr{
+    color: #FF4E00;
+    font-size: 12px;
+    border: 1px solid #DAE1E8;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    .plus-ico{
+        background-color: #FF4E00;
+        color: #fff !important;
+        width: 12px;
+        height: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        @media screen and (min-width: 376px){
+            margin-right: 12px;
+        }
+    }
+    .txt{
+        @media screen and (max-width: 375px){
+            display: none;
+        }
+    }
+    &:hover{
+        color: #FF4E00;
+        border: 1px solid #DAE1E8;
+    }
+}
 .address-list{
     margin: 24px 0 0;
     padding: 0px;
@@ -10,19 +55,37 @@
         justify-content: flex-start;
         align-items: center;
         flex-wrap: wrap;
-        margin-bottom: 18px;
-        
+        margin-bottom: 18px; 
+        @media screen and (max-width: 991px){
+            padding: 15px;
+        }
         .address-info{
             padding-left: 24px;
+            @media screen and (max-width: 991px){
+                padding-left: 0;
+                flex: 0 0 calc(100% - 70px);
+                max-width: calc(100% - 70px);
+            }
             max-width: 400px;
             font: normal normal 300 13px/20px Poppins;
             color: #292929;
             .title{
                 font: normal normal normal 18px/27px Poppins;
                 color: #292929;
+                display: flex;
+                align-items: center;
                 .brand{
                 font: normal normal 600 14px/21px Poppins;
                 display: block;
+                }
+
+                .addressLocn{
+                    font-size: 12px;
+                    padding: 5px 12px;
+                    line-height: 1;
+                    color: #66829F;
+                    border: 1px solid #E4E9EE;
+                    margin-left: 20px;
                 }
             }
             .variation{
@@ -40,6 +103,28 @@
         }
         .cta-wrp{
             text-align: right;
+            margin-bottom: auto;
+            .btn-action{
+               padding: 0;
+               width: 32px;
+               height: 32px;
+               border-radius: 6px;
+               background-color: #66829f1a;
+               display: inline-flex;
+               align-items: center;
+               justify-content: center;
+               margin-left: 10px;
+               @media screen and (max-width: 991px){
+                width: 24px;
+                height: 24px;
+                margin-left: 6px;
+                border-radius: 4px;
+               }
+               img{
+                 width: 50%;
+                 object-fit: contain;
+               }
+            }
             .status{
                 font: normal normal normal 14px/21px Poppins;
                 color: #66829F;
