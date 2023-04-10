@@ -338,12 +338,14 @@
 .card-outer{
     margin-top: 30px;
     display: flex;
+    flex-wrap: wrap;
     column-gap: 20px;
     hr{
         background-color: #DAE1E8;
         opacity: 0.1;
     }
     .card-bank-col{
+        margin-bottom: 15px;
         .card-bank{
             width: 327px;
             min-height: 186px;  
@@ -379,11 +381,13 @@
 
              .rmv{
                 color: #FF4E00;
-                font: 600 12px/18px Poppins;
+                font: 600 13px/18px Poppins;
                 border: 0;
                 background-color: transparent;
                 width: 100%;
-                
+                &:hover{
+                    color: #222;
+                }
              }
         }
 
@@ -456,6 +460,12 @@ text-align: center;
 
 @media (max-width:1679px){
 
+    .card-outer .card-bank-col .card-bank .bnk-title strong {
+        font: 600 13px/21px Poppins;
+    }
+    .card-outer .card-bank-col .card-bank .card-nbrs p {
+        font: normal normal normal 16px/29px Poppins;
+    }
     .content-block-lg .order-list li .cta-wrp .btn-outline{
         min-width: 125px;
     }
@@ -518,11 +528,19 @@ text-align: center;
 
 
 @media (max-width:1199px){
+    .card-outer .card-bank-col{
+    flex-grow: 1;
+    }
+    .card-outer .card-bank-col .card-bank {
+        width: 100%;
+    }
     .content-block-lg .order-list li .product-info{
         margin-bottom: 20px;
     }
 }
 @media (max-width:991px){
+
+ 
     .content-block-lg .order-list li .cta-wrp .status {
         font-size: 13px;
     }
@@ -555,6 +573,10 @@ text-align: center;
     .content-block-lg .sec-sub-title .inner-title-block h4 {
         font-size: 14px;
     }
+    .card-outer{
+        flex-direction: column;
+    }
+    
 }
 @media (max-width:767px){
     .page-title.d-flex{
